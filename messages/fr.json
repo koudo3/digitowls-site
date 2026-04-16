@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "services": "Services",
+    "realisations": "Réalisations",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Firme de consultation IA",
+    "title_1": "Votre vision IA",
+    "title_2": "amplifiée",
+    "description": "Accompagnement stratégique en intelligence artificielle — du conseil au déploiement de solutions sur mesure.",
+    "cta_primary": "Réserver une consultation",
+    "cta_secondary": "Nos services"
+  },
+  "services_section": {
+    "label": "Nos services",
+    "title": "L'IA au service de votre croissance"
+  },
+  "clients_section": {
+    "title": "Ils nous font confiance"
+  },
+  "cta_banner": {
+    "title": "Prêt à transformer votre entreprise avec l'IA ?",
+    "description": "Réservez une consultation gratuite avec nos experts.",
+    "cta": "Réserver maintenant"
+  },
+  "services_page": {
+    "title": "Nos services",
+    "description": "Des solutions IA complètes pour chaque étape de votre transformation numérique."
+  },
+  "realisations_page": {
+    "title": "Nos réalisations",
+    "description": "Découvrez nos projets et cas d'usage en intelligence artificielle.",
+    "filter_all": "Tous"
+  },
+  "about_page": {
+    "title": "Qui sommes-nous",
+    "mission_title": "Notre mission",
+    "mission_text": "DigiTowls accompagne les entreprises dans leur transformation par l'intelligence artificielle. De la stratégie au déploiement, nous amplifions votre vision avec des solutions IA sur mesure.",
+    "team_title": "Nos experts",
+    "values_title": "Nos valeurs"
+  },
+  "blog_page": {
+    "title": "Nos publications",
+    "description": "Articles, analyses et réflexions sur l'intelligence artificielle."
+  },
+  "contact_page": {
+    "title": "Contactez-nous",
+    "description": "Une question ? Un projet ? Parlons-en.",
+    "name": "Nom",
+    "email": "Courriel",
+    "company": "Entreprise",
+    "subject": "Sujet",
+    "message": "Message",
+    "submit": "Envoyer",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer.",
+    "calendly_title": "Réserver une consultation",
+    "calendly_description": "Choisissez un créneau qui vous convient."
+  },
+  "footer": {
+    "description": "Firme de consultation en intelligence artificielle.",
+    "navigation": "Navigation",
+    "our_services": "Nos services",
+    "legal": "Légal",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "rights": "Tous droits réservés."
+  }
+}
