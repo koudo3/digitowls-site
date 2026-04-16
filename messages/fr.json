@@ -68,5 +68,43 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions générales",
     "rights": "Tous droits réservés."
+  },
+  "services_data": {
+    "conseil-strategie": {
+      "title": "Conseil & Stratégie IA",
+      "short": "Accompagnement stratégique et roadmap IA personnalisée.",
+      "description": "Nous vous accompagnons dans la définition de votre stratégie d'intelligence artificielle. De l'identification des opportunités à la feuille de route, nous transformons votre vision en plan d'action concret.",
+      "benefits": ["Audit des opportunités IA", "Roadmap stratégique", "Analyse de faisabilité", "Accompagnement au changement"]
+    },
+    "fintech-assurances": {
+      "title": "Solutions Fintech & Assurances",
+      "short": "Solutions IA pour le secteur financier et assurances.",
+      "description": "Des solutions d'intelligence artificielle conçues spécifiquement pour les défis du secteur financier. Détection de fraude, scoring crédit, automatisation des processus d'assurance.",
+      "benefits": ["Détection de fraude", "Scoring intelligent", "Automatisation des réclamations", "Conformité réglementaire"]
+    },
+    "prototypage": {
+      "title": "Prototypage Accéléré",
+      "short": "MVP et proof-of-concept rapides pour valider vos idées IA.",
+      "description": "Validez rapidement vos hypothèses avec des prototypes fonctionnels. Notre approche accélérée vous permet de tester vos idées IA en quelques semaines, pas en quelques mois.",
+      "benefits": ["MVP en 4-6 semaines", "Proof of concept", "Tests utilisateurs", "Itération rapide"]
+    },
+    "formation": {
+      "title": "Formation sur l'IA",
+      "short": "Programmes de formation pour vos équipes.",
+      "description": "Montez en compétence vos équipes sur l'intelligence artificielle. Nos formations couvrent les fondamentaux jusqu'aux applications avancées, adaptées à votre contexte métier.",
+      "benefits": ["Formations sur mesure", "Ateliers pratiques", "Certification", "Suivi post-formation"]
+    },
+    "talents": {
+      "title": "Placement de Talents IA",
+      "short": "Recrutement de profils spécialisés en IA.",
+      "description": "Trouvez les meilleurs talents en intelligence artificielle. Notre réseau de data scientists, ML engineers et AI architects vous permet de constituer l'équipe idéale.",
+      "benefits": ["Data Scientists", "ML Engineers", "AI Architects", "Consultants spécialisés"]
+    },
+    "audit": {
+      "title": "Audit Technologique Intelligent",
+      "short": "Évaluation et recommandations techniques.",
+      "description": "Un diagnostic complet de votre infrastructure technologique et de votre maturité IA. Nous identifions les forces, les lacunes et les opportunités d'optimisation.",
+      "benefits": ["Diagnostic infrastructure", "Évaluation maturité IA", "Recommandations", "Plan d'amélioration"]
+    }
   }
 }
