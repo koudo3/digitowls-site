@@ -69,6 +69,16 @@
     "terms": "Conditions générales",
     "rights": "Tous droits réservés."
   },
+  "team_data": {
+    "member-1": { "name": "Membre 1", "role": "Titre du poste", "bio": "Courte biographie du membre de l'équipe." },
+    "member-2": { "name": "Membre 2", "role": "Titre du poste", "bio": "Courte biographie du membre de l'équipe." }
+  },
+  "values_data": {
+    "innovation": { "title": "Innovation", "description": "Nous repoussons les limites de l'IA pour créer des solutions avant-gardistes." },
+    "collaboration": { "title": "Collaboration", "description": "Nous travaillons main dans la main avec nos clients pour atteindre leurs objectifs." },
+    "excellence": { "title": "Excellence", "description": "Nous visons l'excellence dans chaque projet et chaque interaction." },
+    "integrity": { "title": "Intégrité", "description": "Transparence et éthique guident toutes nos décisions." }
+  },
   "services_data": {
     "conseil-strategie": {
       "title": "Conseil & Stratégie IA",

@@ -69,6 +69,16 @@
     "terms": "Terms & Conditions",
     "rights": "All rights reserved."
   },
+  "team_data": {
+    "member-1": { "name": "Member 1", "role": "Job Title", "bio": "Short team member biography." },
+    "member-2": { "name": "Member 2", "role": "Job Title", "bio": "Short team member biography." }
+  },
+  "values_data": {
+    "innovation": { "title": "Innovation", "description": "We push the boundaries of AI to create cutting-edge solutions." },
+    "collaboration": { "title": "Collaboration", "description": "We work hand in hand with our clients to achieve their goals." },
+    "excellence": { "title": "Excellence", "description": "We aim for excellence in every project and interaction." },
+    "integrity": { "title": "Integrity", "description": "Transparency and ethics guide all our decisions." }
+  },
   "services_data": {
     "conseil-strategie": {
       "title": "AI Consulting & Strategy",
