@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning className="scroll-smooth scroll-pt-20">
       <body className={`${spaceGrotesk.variable} ${nunito.variable}`}>
         {children}
       </body>
