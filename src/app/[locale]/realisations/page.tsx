@@ -32,7 +32,15 @@ export default function RealisationsPage() {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((project) => (
-            <ProjectCard key={project.id} title={project.id} description="" image={project.image} tags={project.tags} />
+            <ProjectCard
+              key={project.id}
+              title={t(`projects.${project.id}.title`)}
+              description={t(`projects.${project.id}.description`)}
+              image={project.image}
+              tags={t.raw(`projects.${project.id}.tags`) as string[]}
+              type={t(`projects.${project.id}.type`)}
+              date={t(`projects.${project.id}.date`)}
+            />
           ))}
         </div>
       </div>

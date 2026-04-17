@@ -1,19 +1,18 @@
 export interface Service {
   id: string;
   icon: string;
-  image: string;
 }
 
 export interface TeamMember {
   id: string;
   image: string;
+  linkedin?: string;
 }
 
 export interface Project {
   id: string;
   image: string;
   category: string;
-  tags: string[];
 }
 
 export interface Client {

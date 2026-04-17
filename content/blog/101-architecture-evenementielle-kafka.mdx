@@ -1,0 +1,45 @@
+---
+title: "101 Architecture evenementielle et Apache Kafka"
+excerpt: "Comprendre l'architecture orientee evenements (Event-Driven Architecture) et les flux d'evenements (Event Streaming)."
+date: "2022-09-09"
+category: "Architecture"
+image: "/images/blog/kafka-101.png"
+locale: "fr"
+author: "Jocelyn Pichonnat"
+---
+
+## Du monolithique aux microservices
+
+Pendant des decennies, les applications etaient concues comme des monolithes : un seul bloc de code deploye en une seule unite. Cette approche, bien que simple a comprendre, posait des problemes de scalabilite, de maintenance et de deploiement. L'emergence des microservices a permis de decomposer ces monolithes en services independants, chacun responsable d'une fonctionnalite precise.
+
+Cependant, les microservices ont introduit un nouveau defi : la communication entre services. Les appels synchrones (REST, gRPC) creent des couplages forts et des dependances en chaine. C'est ici que l'architecture evenementielle entre en jeu.
+
+## Qu'est-ce qu'un evenement ?
+
+Un evenement est un fait immutable qui s'est produit a un moment donne. Par exemple, "un client a passe une commande", "un paiement a ete effectue" ou "un capteur a enregistre une temperature". Contrairement a une requete qui demande une action, un evenement decrit quelque chose qui s'est deja produit.
+
+Les flux d'evenements (Event Streaming) consistent a capturer ces evenements en continu et a les rendre disponibles pour traitement en temps reel. Les donnees a un instant T representent l'etat actuel d'un systeme, obtenu en rejouant l'ensemble des evenements depuis le debut.
+
+## Event Sourcing et Event Stream Processing
+
+L'Event Sourcing est un patron de conception ou l'etat d'une application est determine par la sequence de tous les evenements qui l'ont modifie. Plutot que de stocker uniquement l'etat final, on conserve l'historique complet des changements.
+
+L'Event Stream Processing va plus loin en permettant le traitement des evenements en temps reel au fur et a mesure qu'ils arrivent. Prenons l'exemple des vehicules autonomes : chaque capteur genere des milliers d'evenements par seconde (position, vitesse, obstacles detectes). Ces evenements doivent etre traites en temps reel pour prendre des decisions de conduite instantanees. C'est un cas d'usage ideal pour le traitement de flux d'evenements.
+
+## Pourquoi adopter l'architecture evenementielle ?
+
+Plusieurs raisons justifient l'adoption de l'EDA (Event-Driven Architecture) :
+
+- **Decouplage** : les producteurs et consommateurs d'evenements sont independants
+- **Scalabilite** : chaque composant peut evoluer independamment
+- **Resilience** : la perte d'un consommateur n'affecte pas les producteurs
+- **Temps reel** : les donnees sont traitees des qu'elles sont disponibles
+- **Historique** : la retention des evenements permet le rejeu et l'audit
+
+## Introduction a Apache Kafka
+
+Apache Kafka est une plateforme de streaming d'evenements distribuee, capable de gerer des milliards d'evenements par jour. Creee a l'origine par LinkedIn et devenue un projet open source Apache, Kafka s'est imposee comme la reference dans le domaine.
+
+Parmi ses fonctionnalites cles, on retrouve **Kafka Connect**, qui permet d'integrer facilement des systemes externes (bases de donnees, files de messages, services cloud) sans ecrire de code, et **Kafka Streams**, une bibliotheque de traitement de flux qui permet de transformer, agreger et enrichir les evenements en temps reel directement dans vos applications.
+
+Kafka constitue ainsi le socle ideal pour batir une architecture evenementielle robuste et performante. Dans les prochains articles, nous explorerons en detail chacune de ces fonctionnalites.

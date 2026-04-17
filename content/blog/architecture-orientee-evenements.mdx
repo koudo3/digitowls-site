@@ -1,0 +1,56 @@
+---
+title: "Sur le pouce - Architecture orientee evenements"
+excerpt: "Aide-memoire sur l'architecture evenementielle : avantages, familles de solutions et considerations pratiques."
+date: "2023-05-23"
+category: "Architecture"
+image: "/images/blog/kafka-101.png"
+locale: "fr"
+author: "Jocelyn Pichonnat"
+---
+
+## Un aide-memoire pour l'architecture evenementielle
+
+L'architecture orientee evenements (Event-Driven Architecture ou EDA) est un paradigme puissant mais qui peut sembler complexe au premier abord. Cet article se veut un aide-memoire concis, a garder sous la main pour vos prochaines decisions architecturales.
+
+## Les avantages fondamentaux
+
+L'architecture evenementielle repose sur trois piliers qui en font une approche particulierement robuste :
+
+- **Decouplage** : les producteurs d'evenements ne connaissent pas les consommateurs, et inversement. Cette independance permet a chaque composant d'evoluer a son propre rythme sans affecter les autres. Ajouter un nouveau consommateur ne necessite aucune modification du producteur.
+- **Immutabilite des donnees** : un evenement, une fois emis, ne change jamais. Il represente un fait qui s'est produit a un instant donne. Cette immutabilite simplifie le raisonnement sur le systeme et elimine toute une categorie de bugs lies aux modifications concurrentes.
+- **Rejeu des donnees** : grace a la retention des evenements, il est possible de rejouer l'historique complet pour reconstruire un etat, corriger un bug de traitement, ou alimenter un nouveau service avec les donnees historiques. Cette capacite est inestimable pour le debugging et l'evolution du systeme.
+
+## Deux familles de solutions
+
+Les solutions d'architecture evenementielle se repartissent en deux grandes familles, chacune avec ses caracteristiques propres :
+
+### Queue (File de messages)
+
+Le modele Queue suit le principe FIFO (First In, First Out). Chaque message est consomme une seule fois par un seul consommateur. Une fois traite, le message est retire de la file.
+
+Ce modele est ideal pour :
+- La distribution de taches entre workers (traitement de commandes, envoi d'emails)
+- Les scenarios ou chaque message doit etre traite exactement une fois
+- La repartition de charge entre plusieurs instances d'un meme service
+
+### Pub/Sub (Publication/Abonnement)
+
+Le modele Pub/Sub permet a plusieurs consommateurs de recevoir le meme evenement. Chaque abonne recoit sa propre copie du message et le traite independamment.
+
+Ce modele est ideal pour :
+- La diffusion d'evenements a de multiples services (un evenement "commande passee" interesse le service d'inventaire, le service de facturation et le service de notification)
+- La repartition de charge au sein d'un groupe de consommateurs (consumer groups)
+- Les scenarios ou l'historique des evenements doit etre conserve
+
+## Considerations pratiques
+
+Avant d'adopter une architecture evenementielle, evaluez soigneusement les points suivants :
+
+- **Capacite d'apprentissage de l'equipe** : l'EDA introduit de nouveaux concepts (evenements, flux, traitement asynchrone, eventual consistency). Votre equipe a-t-elle la maturite et le temps necessaires pour maitriser ce paradigme ?
+- **Cas d'usage** : l'EDA excelle pour les systemes temps reel, les architectures distribuees et les pipelines de donnees. Pour une application CRUD simple avec peu d'utilisateurs, elle peut representer une complexite injustifiee.
+- **Retention et configuration des donnees** : combien de temps les evenements doivent-ils etre conserves ? Quelle est la politique de retention adaptee a votre contexte reglementaire et technique ?
+- **Integration de l'ecosysteme** : votre infrastructure existante est-elle compatible avec la solution choisie ? Les connecteurs necessaires existent-ils pour vos systemes actuels ?
+
+## En resume
+
+L'architecture evenementielle est un outil puissant dans la boite a outils de l'architecte logiciel. Comme tout outil, elle doit etre utilisee a bon escient. Evaluez vos besoins, vos contraintes et la maturite de votre equipe avant de vous lancer. Et quand le contexte s'y prete, les benefices sont considerables.

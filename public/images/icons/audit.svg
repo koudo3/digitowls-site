@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Shield/Audit icon -->
+  <path d="M32 4L8 14v18c0 14 10 22 24 28 14-6 24-14 24-28V14L32 4z" fill="#2AB0C1" opacity="0.3"/>
+  <path d="M32 8L12 16v14c0 12 8 19 20 24 12-5 20-12 20-24V16L32 8z" stroke="#2AB0C1" stroke-width="2.5" fill="none"/>
+  <circle cx="30" cy="30" r="10" stroke="#2AB0C1" stroke-width="2.5" fill="none"/>
+  <path d="M38 38l8 8" stroke="#2AB0C1" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="30" cy="30" r="4" fill="#2AB0C1" opacity="0.5"/>
+</svg>

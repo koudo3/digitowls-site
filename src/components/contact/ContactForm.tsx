@@ -24,31 +24,47 @@ export default function ContactForm() {
     } catch { setStatus("error"); }
   };
 
+  const inputClass = "w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-secondary";
+
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm text-white/70 mb-2">{t("name")}</label>
-          <input name="name" required className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-secondary" />
+          <label className="block text-sm text-white/70 mb-2">{t("name")} *</label>
+          <input name="name" required className={inputClass} />
         </div>
         <div>
-          <label className="block text-sm text-white/70 mb-2">{t("email")}</label>
-          <input name="email" type="email" required className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-secondary" />
+          <label className="block text-sm text-white/70 mb-2">{t("job_title")} *</label>
+          <input name="job_title" required className={inputClass} />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm text-white/70 mb-2">{t("company")}</label>
-          <input name="company" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-secondary" />
+          <label className="block text-sm text-white/70 mb-2">{t("email")} *</label>
+          <input name="email" type="email" required className={inputClass} />
         </div>
         <div>
-          <label className="block text-sm text-white/70 mb-2">{t("subject")}</label>
-          <input name="subject" required className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-secondary" />
+          <label className="block text-sm text-white/70 mb-2">{t("phone")} *</label>
+          <input name="phone" type="tel" required className={inputClass} />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <label className="block text-sm text-white/70 mb-2">{t("company")} *</label>
+          <input name="company" required className={inputClass} />
+        </div>
+        <div>
+          <label className="block text-sm text-white/70 mb-2">{t("country")} *</label>
+          <input name="country" required className={inputClass} />
         </div>
       </div>
       <div>
-        <label className="block text-sm text-white/70 mb-2">{t("message")}</label>
-        <textarea name="message" required rows={5} className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-secondary resize-none" />
+        <label className="block text-sm text-white/70 mb-2">{t("subject")} *</label>
+        <input name="subject" required className={inputClass} />
+      </div>
+      <div>
+        <label className="block text-sm text-white/70 mb-2">{t("message")} *</label>
+        <textarea name="message" required rows={5} className={`${inputClass} resize-none`} />
       </div>
       <Button type="submit" variant="primary">{status === "loading" ? "..." : t("submit")}</Button>
       {status === "success" && <p className="text-green-400 text-sm">{t("success")}</p>}

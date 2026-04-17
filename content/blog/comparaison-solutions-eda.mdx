@@ -1,0 +1,78 @@
+---
+title: "Sur le pouce - Comparaison de solutions d'architecture orientee evenements"
+excerpt: "Comparaison de six solutions d'architecture evenementielle : RabbitMQ, Amazon SQS, Amazon Kinesis, Azure Event Hubs, Apache Kafka et Azure Service Bus."
+date: "2023-06-28"
+category: "Architecture"
+image: "/images/blog/kafka-101.png"
+locale: "fr"
+author: "Jocelyn Pichonnat"
+---
+
+## Choisir la bonne solution
+
+Le choix d'une solution d'architecture evenementielle est une decision structurante qui impacte l'ensemble de votre ecosysteme technique. Cet article compare six solutions populaires selon des criteres pratiques pour vous aider a faire un choix eclaire.
+
+Nous avons organise ces solutions en deux familles : les solutions de type Queue et les solutions de type Pub/Sub.
+
+## Type Queue
+
+### RabbitMQ
+
+RabbitMQ est un broker de messages open source mature et largement adopte. Sa courbe d'apprentissage est moderee grace a une documentation excellente et une communaute active. Il ne supporte pas nativement l'Event Sourcing ni le Stream Processing. La retention de donnees est limitee puisque les messages sont supprimes apres consommation. Le debit est bon pour des volumes moderes, avec une latence tres faible (sub-milliseconde). L'integration est facilitee par le support de nombreux protocoles (AMQP, MQTT, STOMP).
+
+RabbitMQ est un excellent choix pour les cas d'usage classiques de file de messages : distribution de taches, communication inter-services synchrone-like, et scenarios ou la simplicite prime.
+
+### Amazon SQS
+
+Amazon SQS (Simple Queue Service) est le service de file de messages manage d'AWS. La courbe d'apprentissage est faible pour les equipes deja sur AWS. Il n'offre pas d'Event Sourcing ni de Stream Processing natif. La retention est configurable jusqu'a 14 jours. Le debit est pratiquement illimite en mode standard, avec une latence faible. L'integration avec l'ecosysteme AWS est native et transparente.
+
+SQS brille par sa simplicite et son absence totale de gestion d'infrastructure. C'est le choix evident pour les architectures full AWS necessitant une file de messages fiable.
+
+### Amazon Kinesis
+
+Amazon Kinesis est le service de streaming de donnees d'AWS. La courbe d'apprentissage est moderee. Il supporte le Stream Processing via Kinesis Data Analytics. La retention est configurable jusqu'a 365 jours. Le debit est eleve et scalable par ajout de shards, avec une latence de l'ordre de la seconde. L'integration AWS est native.
+
+Kinesis est positionne entre SQS et Kafka : plus puissant que SQS pour le streaming, mais moins flexible que Kafka pour les cas d'usage avances.
+
+## Type Pub/Sub
+
+### Azure Event Hubs
+
+Azure Event Hubs est le service de streaming d'evenements d'Azure. La courbe d'apprentissage est moderee, facilitee par la compatibilite avec le protocole Kafka. Il supporte le Stream Processing via Azure Stream Analytics. La retention est configurable jusqu'a 90 jours (7 jours par defaut). Le debit est tres eleve (millions d'evenements par seconde), avec une latence faible. L'integration avec l'ecosysteme Azure est excellente, et la compatibilite Kafka facilite les migrations.
+
+Event Hubs est le choix naturel pour les organisations investies dans Azure qui cherchent une solution de streaming managee.
+
+### Apache Kafka
+
+Apache Kafka est la reference open source du streaming d'evenements. La courbe d'apprentissage est elevee en raison de la richesse de l'ecosysteme. Il offre un support complet de l'Event Sourcing et du Stream Processing (Kafka Streams, ksqlDB). La retention est configurable sans limite (retention infinie possible). Le debit est extremement eleve (millions de messages par seconde), avec une latence faible (quelques millisecondes). L'integration est la plus riche du marche grace a Confluent Hub et des centaines de connecteurs.
+
+Kafka est la solution la plus complete et la plus flexible, mais aussi la plus exigeante en termes de competences et d'operations. Les offres managees (Confluent Cloud, Amazon MSK) reduisent significativement la charge operationnelle.
+
+### Azure Service Bus
+
+Azure Service Bus est le service de messagerie entreprise d'Azure. La courbe d'apprentissage est moderee. Il ne supporte pas nativement l'Event Sourcing, mais offre des fonctionnalites avancees de routage et de filtrage. La retention est configurable. Le debit est bon pour des volumes moderes a eleves, avec une latence tres faible. L'integration Azure est native, avec un support avance des transactions et des sessions.
+
+Service Bus est ideal pour les scenarios de messagerie entreprise sur Azure necessitant des garanties transactionnelles fortes.
+
+## Tableau comparatif
+
+| Critere | RabbitMQ | SQS | Kinesis | Event Hubs | Kafka | Service Bus |
+|---|---|---|---|---|---|---|
+| Courbe d'apprentissage | Moderee | Faible | Moderee | Moderee | Elevee | Moderee |
+| Event Sourcing | Non | Non | Partiel | Partiel | Oui | Non |
+| Stream Processing | Non | Non | Oui | Oui | Oui | Non |
+| Retention | Limitee | 14 jours | 365 jours | 90 jours | Illimitee | Configurable |
+| Debit | Modere | Eleve | Eleve | Tres eleve | Tres eleve | Modere |
+| Latence | Tres faible | Faible | ~1s | Faible | Faible | Tres faible |
+
+## Quel choix faire ?
+
+Il n'existe pas de solution universelle. Le choix depend de votre contexte :
+
+- **Simplicite et file de messages** : RabbitMQ ou Amazon SQS
+- **Streaming sur AWS** : Amazon Kinesis
+- **Streaming sur Azure** : Azure Event Hubs
+- **Messagerie entreprise sur Azure** : Azure Service Bus
+- **Flexibilite maximale et independance cloud** : Apache Kafka
+
+Evaluez vos besoins en termes de retention, de debit, de latence et de capacites de traitement, puis choisissez la solution qui correspond le mieux a votre ecosysteme et aux competences de votre equipe.

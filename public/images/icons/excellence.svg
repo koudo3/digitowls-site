@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Diamond / Excellence -->
+  <path d="M32 4L12 24l20 36 20-36L32 4z" fill="#2AB0C1" opacity="0.3"/>
+  <path d="M32 4L12 24l20 36 20-36L32 4z" stroke="#2AB0C1" stroke-width="2.5" fill="none"/>
+  <path d="M12 24h40" stroke="#2AB0C1" stroke-width="2" opacity="0.6"/>
+  <path d="M22 4l-10 20M42 4l10 20M32 4v20" stroke="#2AB0C1" stroke-width="1.5" opacity="0.5"/>
+  <path d="M22 24l10 36M42 24L32 60" stroke="#2AB0C1" stroke-width="1.5" opacity="0.4"/>
+</svg>

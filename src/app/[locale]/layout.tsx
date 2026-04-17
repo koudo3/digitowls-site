@@ -11,8 +11,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const isEn = locale === "en";
   return {
     title: {
-      default: "DigiTowls AI — " + (isEn ? "Your AI vision amplified" : "Votre vision IA amplifiée"),
-      template: "%s | DigiTowls AI",
+      default: "digitowls AI - Your AI vision amplified",
+      template: "%s | digitowls AI",
     },
     description: isEn
       ? "AI consulting firm — from strategy to deployment of tailored solutions."

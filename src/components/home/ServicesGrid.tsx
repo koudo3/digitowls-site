@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import { services } from "@/data/services";
@@ -17,7 +18,9 @@ export default function ServicesGrid() {
           {services.map((service, i) => (
             <AnimatedSection key={service.id} delay={i * 0.1}>
               <Link href={`/${locale}/services#${service.id}`} className="block bg-secondary/10 border border-secondary/20 rounded-xl p-6 text-center hover:bg-secondary/20 transition-colors">
-                <div className="text-3xl mb-3">{service.icon}</div>
+                <div className="mb-3 flex justify-center">
+                  <Image src={service.icon} alt="" width={48} height={48} />
+                </div>
                 <h3 className="font-heading font-bold text-lg mb-2">{tServices(`${service.id}.title`)}</h3>
                 <p className="text-white/60 text-sm">{tServices(`${service.id}.short`)}</p>
               </Link>

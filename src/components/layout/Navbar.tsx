@@ -14,9 +14,11 @@ export default function Navbar() {
 
   const links = [
     { href: `/${locale}/services`, label: t("services") },
+    { href: `/${locale}/produits`, label: t("products") },
     { href: `/${locale}/realisations`, label: t("realisations") },
     { href: `/${locale}/a-propos`, label: t("about") },
     { href: `/${locale}/blog`, label: t("blog") },
+    { href: `/${locale}/carrieres`, label: t("careers") },
   ];
 
   return (
@@ -24,7 +26,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href={`/${locale}`} className="flex items-center gap-2">
-            <Image src="/images/logo/owl-4.png" alt="DigiTowls" width={32} height={32} />
+            <Image src="/images/logo/owl-4.svg" alt="DigiTowls" width={32} height={32} />
             <span className="font-body font-bold text-lg">digitowls</span>
           </Link>
           <div className="hidden md:flex items-center gap-6">

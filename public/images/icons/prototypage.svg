@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Rocket/Fast prototype icon -->
+  <path d="M32 4c-8 8-12 20-12 30h24c0-10-4-22-12-30z" fill="#2AB0C1" opacity="0.8"/>
+  <circle cx="32" cy="24" r="5" fill="#141840"/>
+  <path d="M20 34c-6-2-12 0-14 4l10 4 4-8z" fill="#2AB0C1" opacity="0.5"/>
+  <path d="M44 34c6-2 12 0 14 4l-10 4-4-8z" fill="#2AB0C1" opacity="0.5"/>
+  <path d="M24 34l4 16h8l4-16H24z" fill="#2AB0C1" opacity="0.7"/>
+  <path d="M28 50l-4 10 8-6 8 6-4-10H28z" fill="#2AB0C1" opacity="0.5"/>
+</svg>

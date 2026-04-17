@@ -1,9 +1,11 @@
 {
   "nav": {
     "services": "Services",
+    "products": "Produits",
     "realisations": "Réalisations",
     "about": "À propos",
     "blog": "Blog",
+    "careers": "Carrières",
     "contact": "Contact"
   },
   "hero": {
@@ -11,7 +13,7 @@
     "title_1": "Votre vision IA",
     "title_2": "amplifiée",
     "description": "Accompagnement stratégique en intelligence artificielle — du conseil au déploiement de solutions sur mesure.",
-    "cta_primary": "Réserver une consultation",
+    "cta_primary": "Démarrer votre projet IA",
     "cta_secondary": "Nos services"
   },
   "services_section": {
@@ -19,7 +21,18 @@
     "title": "L'IA au service de votre croissance"
   },
   "clients_section": {
-    "title": "Ils nous font confiance"
+    "title": "Nos clients et partenaires",
+    "testimonials_title": "Témoignages",
+    "testimonial_1": {
+      "quote": "DigitOwls a été un partenaire précieux pour notre entreprise. Leur approche professionnelle et leurs solutions innovantes ont considérablement amélioré notre sécurité informatique.",
+      "author": "Jeanne Dupont",
+      "role": "VP. Opérations, Banque Nationale"
+    },
+    "testimonial_2": {
+      "quote": "Travailler avec DigitOwls a été une expérience transformative. Leurs conseils précis et leur expertise ont ouvert de nouvelles perspectives pour notre organisation.",
+      "author": "Ahmed Kone",
+      "role": ""
+    }
   },
   "cta_banner": {
     "title": "Prêt à transformer votre entreprise avec l'IA ?",
@@ -31,14 +44,70 @@
     "description": "Des solutions IA complètes pour chaque étape de votre transformation numérique."
   },
   "realisations_page": {
-    "title": "Nos réalisations",
-    "description": "Découvrez nos projets et cas d'usage en intelligence artificielle.",
-    "filter_all": "Tous"
+    "title": "Réalisations et Études de cas",
+    "description": "Des résultats concrets, une valeur mesurable. Chaque projet que nous accompagnons est conçu pour réduire les risques, accélérer la transformation et démontrer le retour sur investissement avant le passage à grande échelle.",
+    "filter_all": "Tous",
+    "projects": {
+      "assistant-banque": {
+        "title": "Assistant AI — Banques et finances",
+        "description": "Agent conversationnel client, assistant conformité IA, synthétiseur de rapports financiers.",
+        "type": "AI Assistant",
+        "date": "2025",
+        "tags": ["IA", "Banque", "Assistant AI"]
+      },
+      "plateforme-data": {
+        "title": "Plateforme data temps réel",
+        "description": "Conception et déploiement d'une fondation data multi-cloud basée sur Apache Kafka pour Desjardins. Une architecture événementielle robuste au cœur des usages critiques : sécurité, analytique avancée et IA.",
+        "type": "Plateforme Data",
+        "date": "Avril 2023",
+        "tags": ["Data", "Kafka", "Cloud"]
+      },
+      "assistant-securite": {
+        "title": "Assistant AI — Sécurité",
+        "description": "Agents d'assistance de détection de sécurité logistique pour Fnac.",
+        "type": "AI Assistant",
+        "date": "2025",
+        "tags": ["IA", "Sécurité", "Logistique"]
+      },
+      "assistant-rh": {
+        "title": "Assistant AI — Ressources Humaines",
+        "description": "Assistant RH intelligent, outil d'analyse de données RH et automatisation des processus de recrutement.",
+        "type": "AI Assistant",
+        "date": "2025",
+        "tags": ["IA", "RH", "Assistant AI"]
+      },
+      "assistant-sante": {
+        "title": "Assistants AI — Santé",
+        "description": "Agent vocal conversationnel, assistant prédictif de planification, solution de machine learning pour le secteur de la santé.",
+        "type": "Assistant AI Santé",
+        "date": "2025",
+        "tags": ["IA", "Santé", "ML"]
+      },
+      "assistant-ecommerce": {
+        "title": "Assistant AI — E-commerce",
+        "description": "Product Assistant Manager (PAM), agent de contrôle qualité, outil de génération multilingue pour Moncler.",
+        "type": "E-commerce AI",
+        "date": "2025",
+        "tags": ["IA", "E-commerce", "Multilingue"]
+      }
+    }
   },
   "about_page": {
     "title": "Qui sommes-nous",
+    "tagline": "L'architecte de votre performance numérique.",
     "mission_title": "Notre mission",
-    "mission_text": "DigiTowls accompagne les entreprises dans leur transformation par l'intelligence artificielle. De la stratégie au déploiement, nous amplifions votre vision avec des solutions IA sur mesure.",
+    "mission_text": "DigitOwls est né d'une conviction simple : l'innovation technologique ne vaut que si elle sert une réalité opérationnelle. Nous accompagnons les banques, les assurances et les entreprises innovantes pour transformer leurs défis technologiques en leviers de croissance. Plus qu'un cabinet de conseil, nous sommes votre accélérateur. Nous combinons une connaissance pointue des métiers financiers, une maîtrise des technologies d'IA et une capacité de déploiement rapide pour créer des solutions concrètes, sécurisées et rentables.",
+    "partnership_title": "Une force de frappe internationale",
+    "partnership_text": "DigitOwls est le représentant exclusif de Proxym au Canada. Cette alliance stratégique nous permet d'offrir au marché canadien le meilleur des deux mondes :",
+    "partnership_local": "L'agilité locale — Une équipe montréalaise proche de vous, réactive et au fait des enjeux nord-américains.",
+    "partnership_global": "La puissance globale — L'accès immédiat aux ressources d'un leader européen de la transformation numérique (350+ experts, 20 ans d'expérience).",
+    "pillars_title": "Nos 3 Piliers d'Excellence",
+    "pillar_1_title": "Innovation Lab & IA Appliquée",
+    "pillar_1_text": "Transformez l'incertain en résultats. Notre laboratoire d'innovation aide les organisations à sortir de la théorie pour passer à la pratique.",
+    "pillar_2_title": "Expertise Banque & Assurance",
+    "pillar_2_text": "Nous parlons votre langage. Forts de l'expérience de nos équipes et des outils stratégiques du groupe Proxym, nous modernisons le cœur de vos activités.",
+    "pillar_3_title": "Accès aux Talents",
+    "pillar_3_text": "La bonne compétence, au bon moment. La pénurie de talents ne doit pas freiner votre croissance.",
     "team_title": "Nos experts",
     "values_title": "Nos valeurs"
   },
@@ -50,28 +119,172 @@
     "title": "Contactez-nous",
     "description": "Une question ? Un projet ? Parlons-en.",
     "name": "Nom",
+    "job_title": "Titre du poste",
     "email": "Courriel",
+    "phone": "Téléphone",
     "company": "Entreprise",
+    "country": "Pays",
     "subject": "Sujet",
     "message": "Message",
     "submit": "Envoyer",
     "success": "Message envoyé avec succès !",
     "error": "Erreur lors de l'envoi. Veuillez réessayer.",
     "calendly_title": "Réserver une consultation",
-    "calendly_description": "Choisissez un créneau qui vous convient."
+    "calendly_description": "Choisissez un créneau qui vous convient.",
+    "info_title": "Nos coordonnées",
+    "phone_label": "Téléphone (Amérique du Nord)",
+    "phone_value": "438-492-7832",
+    "address_label": "Adresse",
+    "address_value": "WeWork, Suite 400\n3 Place Ville Marie\nMontréal, H3B 2E3, QC",
+    "email_label": "Courriel",
+    "email_value": "candidature@digitowls.com"
+  },
+  "careers_page": {
+    "title": "Carrières",
+    "description": "Rejoignez une équipe de passionnés. Nous recherchons des profils engagés, opérationnels et surtout très bons dans ce qu'ils font.",
+    "location": "Montréal, QC",
+    "type": "Temps plein",
+    "level": "Senior",
+    "apply": "Postuler",
+    "apply_email": "candidature@digitowls.com",
+    "no_jobs": "Aucun poste disponible pour le moment.",
+    "spontaneous_title": "Candidature spontanée",
+    "spontaneous_text": "Aucun poste ne correspond à votre profil ? Envoyez-nous votre CV à",
+    "jobs": {
+      "qa-automation": {
+        "title": "Spécialiste QA Automation",
+        "description": "Nous recherchons un spécialiste QA Automation senior pour mettre les tests automatisés, la qualité et la fiabilité au cœur de nos produits.",
+        "responsibilities": [
+          "Concevoir et implémenter des stratégies de tests automatisés",
+          "Développer et maintenir des frameworks de tests (UI, API, performance)",
+          "Collaborer avec les équipes de développement pour intégrer la qualité dans le cycle CI/CD",
+          "Analyser les résultats de tests et produire des rapports de qualité",
+          "Participer aux revues de code et promouvoir les bonnes pratiques de test"
+        ],
+        "requirements": [
+          "5+ ans d'expérience en QA automation",
+          "Maîtrise de Selenium, Cypress, Playwright ou outils similaires",
+          "Expérience avec les pipelines CI/CD (Jenkins, GitLab CI, GitHub Actions)",
+          "Connaissance des tests de performance (JMeter, k6)",
+          "Excellent esprit analytique et souci du détail"
+        ]
+      },
+      "ai-blockchain-architect": {
+        "title": "Architecte IA & Blockchain",
+        "description": "Nous recherchons un architecte senior capable de porter une vision stratégique, de concevoir des architectures robustes et de livrer des cas d'usage concrets en IA et blockchain.",
+        "responsibilities": [
+          "Définir l'architecture technique des solutions IA et blockchain",
+          "Évaluer et recommander les technologies et plateformes adaptées",
+          "Concevoir des preuves de concept (POC) et prototypes fonctionnels",
+          "Accompagner les clients dans leur stratégie d'innovation technologique",
+          "Assurer la scalabilité, la sécurité et la performance des solutions"
+        ],
+        "requirements": [
+          "7+ ans d'expérience en architecture logicielle",
+          "Expertise en IA/ML (Python, TensorFlow, PyTorch, LLM)",
+          "Connaissance des technologies blockchain (Ethereum, Solidity, Web3)",
+          "Expérience en architecture cloud (AWS, Azure, GCP)",
+          "Leadership technique et capacité à vulgariser des concepts complexes"
+        ]
+      },
+      "lead-fullstack": {
+        "title": "Lead Développeur Fullstack",
+        "description": "Nous recherchons un lead développeur fullstack senior alliant compétences techniques, leadership, livraison et scalabilité.",
+        "responsibilities": [
+          "Diriger techniquement une équipe de développeurs",
+          "Concevoir et développer des applications web et mobiles performantes",
+          "Définir les standards de code et les bonnes pratiques de développement",
+          "Participer à l'architecture des solutions et aux choix technologiques",
+          "Assurer la livraison continue et la qualité du code"
+        ],
+        "requirements": [
+          "7+ ans d'expérience en développement fullstack",
+          "Maîtrise de React/Next.js, Node.js, TypeScript",
+          "Expérience avec les bases de données SQL et NoSQL",
+          "Expérience en gestion d'équipe et mentorat",
+          "Connaissance des pratiques DevOps et CI/CD"
+        ]
+      }
+    }
+  },
+  "products_page": {
+    "title": "Nos produits",
+    "description": "Des outils IA concrets pour accélérer votre transformation."
+  },
+  "cadrage_page": {
+    "title": "Notre outil de cadrage IA",
+    "subtitle": "Votre Projet IA commence ici !",
+    "description": "Avec notre agent IA gratuit, passez de l'intuition à l'expérimentation en moins de 10 minutes !",
+    "card_1_title": "Transformer votre idée IA en premier concept clair !",
+    "card_1_text": "Vous désirez intégrer de l'IA dans votre organisation, vous avez des besoins ou des idées de cas d'usages, notre agent IA de cadrage peut vous aider.",
+    "card_2_title": "Pourquoi se lancer dans un projet IA maintenant ?",
+    "card_2_text": "L'IA crée déjà de la valeur dans tous les secteurs. L'objectif : vous aider à repérer l'opportunité la plus simple, la plus utile et rapidement testable.",
+    "card_3_title": "Comment ça marche ?",
+    "card_3_step_1": "Vous discutez de votre idée et/ou vos besoins avec notre agent IA",
+    "card_3_step_2": "Notre agent IA vous aide à définir et organiser votre idée",
+    "card_3_step_3": "Vous recevez la synthèse de votre projet par courriel",
+    "card_3_footer": "Le tout en moins de 10 min...",
+    "cta": "Commencer le cadrage",
+    "cta_advisor": "Parler à un conseiller"
   },
   "footer": {
     "description": "Firme de consultation en intelligence artificielle.",
     "navigation": "Navigation",
     "our_services": "Nos services",
+    "contact": "Contact",
     "legal": "Légal",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions générales",
+    "branding": "Image de marque",
+    "follow_us": "Suivez-nous !",
     "rights": "Tous droits réservés."
   },
   "team_data": {
-    "member-1": { "name": "Membre 1", "role": "Titre du poste", "bio": "Courte biographie du membre de l'équipe." },
-    "member-2": { "name": "Membre 2", "role": "Titre du poste", "bio": "Courte biographie du membre de l'équipe." }
+    "octave-koudoyor": {
+      "name": "Octave Koudoyor",
+      "role": "Président",
+      "bio": "Fondateur et président de DigitOwls, Octave pilote la vision stratégique de la firme et accompagne les entreprises dans leur transformation numérique par l'intelligence artificielle."
+    },
+    "xavier-bouclet": {
+      "name": "Xavier Bouclet",
+      "role": "Vice-Président",
+      "bio": "Xavier Bouclet est un expert en développement logiciel et en architecture backend, avec plus de 15 ans d'expérience dans la conception et l'industrialisation de solutions numériques complexes. Conférencier à ConFoo et co-organisateur de la communauté Montréal JUG, il partage son expertise sur l'industrialisation du développement, l'optimisation des API et les bonnes pratiques DevOps."
+    },
+    "alban-pellegrini": {
+      "name": "Alban Pellegrini",
+      "role": "Vice-Président",
+      "bio": "Alban Pellegrini est co-fondateur et Lead Mobile Developer chez DigitOwls, apportant une expertise profonde dans le développement d'applications mobiles innovantes et orientées utilisateur. Il combine pensée startup, agilité et excellence technique pour transformer des idées ambitieuses en produits mobiles fiables et scalables."
+    },
+    "gregoire-guenot": {
+      "name": "Grégoire Guenot",
+      "role": "Vice-Président",
+      "bio": "Grégoire Guenot est un leader digital et entrepreneur reconnu pour sa capacité à transformer les ambitions technologiques en résultats concrets. Co-fondateur de plusieurs projets innovants, il combine vision stratégique, rigueur opérationnelle et agilité startup pour accélérer la création de valeur."
+    },
+    "alexander-kirilov": {
+      "name": "Alexander Kirilov",
+      "role": "Expert IA",
+      "bio": "Alexander Kirilov est architecte IA et expert en innovation digitale, spécialisé dans la conception et l'industrialisation de solutions d'intelligence artificielle à forte valeur stratégique. Sa capacité à traduire des besoins métiers complexes en architectures IA robustes et évolutives fait de lui un moteur clé de l'innovation."
+    },
+    "audrey-van-hoorebeke": {
+      "name": "Audrey Van Hoorebeke",
+      "role": "Gestionnaire de produit IA",
+      "bio": "Audrey Van Hoorebeke est une leader en transformation digitale et gestion de programmes stratégiques, reconnue pour sa capacité à orchestrer des initiatives complexes à fort impact business, tout en guidant les équipes dans l'adoption et la pérennisation des solutions numériques."
+    },
+    "herlin-tang": {
+      "name": "Herlin Tang",
+      "role": "Expert",
+      "bio": "Expert en technologies numériques chez DigitOwls, Herlin contribue à la conception et au déploiement de solutions innovantes pour nos clients."
+    },
+    "luigi-tomegah": {
+      "name": "Luigi Tomegah",
+      "role": "Expert",
+      "bio": "Expert en technologies numériques chez DigitOwls, Luigi apporte son savoir-faire technique pour accélérer les projets de transformation de nos clients."
+    },
+    "olivier-trudeau": {
+      "name": "Olivier Trudeau",
+      "role": "Expert IA",
+      "bio": "Expert en intelligence artificielle chez DigitOwls, Olivier contribue à la recherche et au développement de solutions IA avancées."
+    }
   },
   "values_data": {
     "innovation": { "title": "Innovation", "description": "Nous repoussons les limites de l'IA pour créer des solutions avant-gardistes." },
@@ -82,39 +295,75 @@
   "services_data": {
     "conseil-strategie": {
       "title": "Conseil & Stratégie IA",
-      "short": "Accompagnement stratégique et roadmap IA personnalisée.",
-      "description": "Nous vous accompagnons dans la définition de votre stratégie d'intelligence artificielle. De l'identification des opportunités à la feuille de route, nous transformons votre vision en plan d'action concret.",
-      "benefits": ["Audit des opportunités IA", "Roadmap stratégique", "Analyse de faisabilité", "Accompagnement au changement"]
+      "short": "Transformez votre vision en feuille de route opérationnelle.",
+      "tagline": "Ne subissez pas la vague de l'IA. Surfez dessus avec une stratégie claire, éthique et rentable.",
+      "description": "L'intelligence artificielle offre des opportunités immenses, mais par où commencer ? Sans plan précis, les entreprises risquent de disperser leurs ressources dans des gadgets sans ROI ou de se heurter à des murs réglementaires.",
+      "approach_title": "Notre Approche",
+      "approach_text": "Nous agissons comme vos architectes numériques. Notre intervention se déroule en trois temps :",
+      "benefits": ["Identification des opportunités : Analyse de vos processus pour détecter les cas d'usage à plus forte valeur ajoutée.", "Priorisation & Roadmap : Création d'un plan de match réaliste, aligné sur vos objectifs d'affaires et vos contraintes budgétaires.", "Gouvernance & Éthique : Mise en place de cadres de travail pour assurer un déploiement sécurisé, responsable et conforme aux réglementations."],
+      "results_title": "Vos Résultats",
+      "results": ["Une vision claire à 12-24 mois.", "Un budget optimisé sur les projets à fort impact.", "Une réduction des risques liés à la conformité des données."],
+      "cta": "Réserver une session de cadrage stratégique"
     },
     "fintech-assurances": {
       "title": "Solutions Fintech & Assurances",
-      "short": "Solutions IA pour le secteur financier et assurances.",
-      "description": "Des solutions d'intelligence artificielle conçues spécifiquement pour les défis du secteur financier. Détection de fraude, scoring crédit, automatisation des processus d'assurance.",
-      "benefits": ["Détection de fraude", "Scoring intelligent", "Automatisation des réclamations", "Conformité réglementaire"]
+      "short": "L'excellence digitale bancaire avec Proxym.",
+      "tagline": "Digitowls est le revendeur exclusif au Canada. Déployez des expériences clients fluides, sécurisées et 100% digitales.",
+      "description": "Le secteur financier doit se moderniser rapidement face aux néo-banques, mais développer des solutions propriétaires prend des années.",
+      "approach_title": "La Solution Proxym",
+      "approach_text": "En tant que partenaire exclusif, nous vous donnons accès à une suite de plateformes éprouvées mondialement :",
+      "benefits": ["Banque Digitale & Mobile : UX/UI moderne pour fidéliser vos clients.", "Solutions Assurantielles (Insurtech) : Gestion de sinistres et souscription automatisée par l'IA.", "Agilité & Cloud : Des solutions modulaires qui s'intègrent à votre Core Banking existant."],
+      "results_title": "Vos Résultats",
+      "results": ["Time-to-Market accéléré : Lancez de nouveaux produits en quelques mois, pas en années.", "Sécurité de niveau bancaire : Solutions conformes aux standards les plus stricts.", "Expérience Client (CX) : Offrez le parcours fluide que vos clients attendent."],
+      "cta": "Demander une démo de la plateforme"
     },
     "prototypage": {
-      "title": "Prototypage Accéléré",
-      "short": "MVP et proof-of-concept rapides pour valider vos idées IA.",
-      "description": "Validez rapidement vos hypothèses avec des prototypes fonctionnels. Notre approche accélérée vous permet de tester vos idées IA en quelques semaines, pas en quelques mois.",
-      "benefits": ["MVP en 4-6 semaines", "Proof of concept", "Tests utilisateurs", "Itération rapide"]
+      "title": "Prototypage Accéléré (POC)",
+      "short": "De l'idée au prototype fonctionnel en 4 à 6 semaines.",
+      "tagline": "Validez la valeur d'affaires avant d'investir massivement. Innovez vite, apprenez, et visualisez vos projets afin de mieux réussir.",
+      "description": "Les projets informatiques traditionnels sont longs et coûteux (« Effet Tunnel »). Lancer une solution complète sans avoir testé son adéquation avec le marché est un risque financier majeur.",
+      "approach_title": "Notre Solution",
+      "approach_text": "Le « Fast-Track » IA — Nous créons un Proof of Concept (POC) utilisable en temps record :",
+      "benefits": ["Cadrage express (1 semaine) : Définition du périmètre critique.", "Développement Agile (3-4 semaines) : Construction du MVP (Minimum Viable Product).", "Test & Validation (1 semaine) : Feedback utilisateurs et mesure du ROI."],
+      "results_title": "Pourquoi choisir cette approche ?",
+      "results": ["Réduction des coûts : Testez pour une fraction du prix d'un projet complet.", "Preuve par l'exemple : Démontrez la valeur à votre direction ou vos investisseurs avec du concret.", "Données réelles : Prenez votre décision de « Go / No-Go » basée sur des feedbacks terrain."],
+      "cta": "Réserver une session de consultation pour débuter votre prototype"
     },
     "formation": {
       "title": "Formation sur l'IA",
-      "short": "Programmes de formation pour vos équipes.",
-      "description": "Montez en compétence vos équipes sur l'intelligence artificielle. Nos formations couvrent les fondamentaux jusqu'aux applications avancées, adaptées à votre contexte métier.",
-      "benefits": ["Formations sur mesure", "Ateliers pratiques", "Certification", "Suivi post-formation"]
+      "short": "Préparez vos équipes à l'ère de l'Intelligence Artificielle.",
+      "tagline": "La technologie n'est rien sans les talents pour la piloter. Développez une culture de l'innovation en interne.",
+      "description": "L'adoption de l'IA échoue souvent non pas à cause de la technique, mais à cause du facteur humain. La résistance au changement et le manque de compétences techniques sont les principaux freins à votre transformation.",
+      "approach_title": "Nos Programmes sur mesure",
+      "approach_text": "Nous ne faisons pas que de la théorie. Nos formations sont pratiques et adaptées à votre secteur :",
+      "benefits": ["Pour les décideurs : Comprendre les enjeux stratégiques de l'IA pour mieux piloter.", "Pour les équipes techniques : Ateliers pratiques sur les nouveaux outils (LLM, Automatisation, Data Science).", "Pour tous les employés : Acculturation pour démystifier l'IA et encourager l'adoption au quotidien."],
+      "results_title": "Vos Résultats",
+      "results": ["Des équipes autonomes et confiantes face aux nouveaux outils.", "Une productivité accrue grâce à une adoption réelle de l'IA.", "Une marque employeur renforcée, attirant les talents innovants."],
+      "cta": "Réserver une session afin d'identifier vos besoins en formation"
     },
     "talents": {
       "title": "Placement de Talents IA",
-      "short": "Recrutement de profils spécialisés en IA.",
-      "description": "Trouvez les meilleurs talents en intelligence artificielle. Notre réseau de data scientists, ML engineers et AI architects vous permet de constituer l'équipe idéale.",
-      "benefits": ["Data Scientists", "ML Engineers", "AI Architects", "Consultants spécialisés"]
+      "short": "L'expertise technique nouvelle génération, intégrée chez vous.",
+      "tagline": "Accédez aux meilleurs consultants « hybrides », capables de naviguer entre systèmes hérités et IA moderne.",
+      "description": "Trouver des experts est difficile. Trouver des experts qui comprennent à la fois vos vieux systèmes (Legacy) et les nouvelles technologies d'IA est presque impossible sur le marché traditionnel.",
+      "approach_title": "Notre Vivier de Talents",
+      "approach_text": "Nous ne sommes pas des chasseurs de tête classiques. Nous sommes des experts tech qui recrutent des experts tech.",
+      "benefits": ["Consultants Hybrides : Formés pour faire le pont entre l'ancien et le nouveau monde IT.", "Experts IA & Data : Prêts à être déployés sur vos projets spécifiques.", "Sélection rigoureuse : Tous nos talents sont testés techniquement par nos soins avant de vous être présentés."],
+      "results_title": "Vos Résultats",
+      "results": ["Réduction drastique du temps de recrutement.", "Des consultants opérationnels dès le premier jour (« Plug & Play »).", "Flexibilité pour renforcer vos équipes selon la charge de projet."],
+      "cta": "Contactez-nous pour une consultation gratuite"
     },
     "audit": {
       "title": "Audit Technologique Intelligent",
-      "short": "Évaluation et recommandations techniques.",
-      "description": "Un diagnostic complet de votre infrastructure technologique et de votre maturité IA. Nous identifions les forces, les lacunes et les opportunités d'optimisation.",
-      "benefits": ["Diagnostic infrastructure", "Évaluation maturité IA", "Recommandations", "Plan d'amélioration"]
+      "short": "Sécurisez vos fondations technologiques.",
+      "tagline": "Une évaluation à 360° de vos projets, fournisseurs et architectures pour avancer sans angle mort.",
+      "description": "Dette technique, failles de sécurité, fournisseurs peu fiables ou architecture inadaptée à l'IA... Les risques invisibles peuvent faire dérailler votre croissance.",
+      "approach_title": "Ce que nous auditons",
+      "approach_text": "",
+      "benefits": ["Audit d'Architecture : Votre infrastructure est-elle prête à passer à l'échelle (Scalability) ?", "Due Diligence Fournisseurs : Évaluation technique et financière de vos partenaires technologiques.", "Audit de Sécurité & Risques IA : Analyse des vulnérabilités et de la robustesse de vos modèles algorithmiques."],
+      "results_title": "Vos Résultats",
+      "results": ["Un rapport détaillé avec des recommandations priorisées.", "Une cartographie précise de vos risques techniques.", "Un plan d'assainissement pour repartir sur des bases saines."],
+      "cta": "Réserver une session de consultation"
     }
   }
 }

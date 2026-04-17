@@ -1,6 +1,34 @@
 import { Project } from "@/lib/types";
 
 export const projects: Project[] = [
-  { id: "project-1", image: "/images/placeholder.webp", category: "conseil-strategie", tags: ["IA", "Stratégie"] },
-  { id: "project-2", image: "/images/placeholder.webp", category: "fintech-assurances", tags: ["Fintech", "ML"] },
+  {
+    id: "assistant-banque",
+    image: "/images/projects/assistant-banque.webp",
+    category: "fintech-assurances",
+  },
+  {
+    id: "plateforme-data",
+    image: "/images/projects/plateforme-data.png",
+    category: "fintech-assurances",
+  },
+  {
+    id: "assistant-securite",
+    image: "/images/projects/assistant-securite.png",
+    category: "conseil-strategie",
+  },
+  {
+    id: "assistant-rh",
+    image: "/images/projects/assistant-rh.jpg",
+    category: "conseil-strategie",
+  },
+  {
+    id: "assistant-sante",
+    image: "/images/projects/assistant-sante.jpg",
+    category: "prototypage",
+  },
+  {
+    id: "assistant-ecommerce",
+    image: "/images/projects/assistant-ecommerce.webp",
+    category: "conseil-strategie",
+  },
 ];

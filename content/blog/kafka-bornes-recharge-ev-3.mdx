@@ -1,0 +1,63 @@
+---
+title: "Apache Kafka et les bornes de recharges de vehicules electriques : episode 3"
+excerpt: "Implementation technique d'une architecture evenementielle pour les reseaux de recharge de vehicules electriques."
+date: "2023-03-19"
+category: "Architecture"
+image: "/images/blog/kafka-ev-3.png"
+locale: "fr"
+author: "Jocelyn Pichonnat"
+---
+
+## De la theorie a la pratique
+
+Apres avoir explore les benefices pour les operateurs (episode 1) et pour les utilisateurs (episode 2), ce troisieme et dernier episode se concentre sur l'implementation technique. Comment concretiser cette architecture evenementielle pour un reseau de bornes de recharge de vehicules electriques ?
+
+## Integration des protocoles OCPP et OCPI
+
+Les bornes de recharge communiquent principalement via deux protocoles standards :
+
+- **OCPP (Open Charge Point Protocol)** : protocole de communication entre les bornes et le systeme de gestion central. Il gere les sessions de recharge, le monitoring et la configuration des bornes.
+- **OCPI (Open Charge Point Interface)** : protocole d'echange de donnees entre operateurs de reseaux, permettant l'itinerance (roaming) entre differents reseaux de recharge.
+
+L'integration de ces protocoles avec Kafka constitue la premiere etape technique. Les messages OCPP et OCPI doivent etre deserialises, valides et publies dans les topics Kafka appropries.
+
+## Developpement de Kafka Producers ou connecteurs Connect Source
+
+Deux approches sont possibles pour ingerer les donnees des bornes dans Kafka :
+
+Le developpement d'un **Kafka Producer custom** offre un controle total sur la serialisation, le partitionnement et la gestion des erreurs. Cette approche est adaptee lorsque les bornes communiquent via un protocole proprietaire ou lorsque des transformations specifiques sont necessaires avant l'ingestion.
+
+Alternativement, un **connecteur Kafka Connect Source custom** offre les avantages du framework Connect (scalabilite, tolerance aux pannes, gestion des offsets) tout en permettant l'integration de protocoles specifiques. Cette approche est recommandee pour les implementations a grande echelle.
+
+## Transformation et agregation avec Kafka Streams
+
+Une fois les donnees dans Kafka, Kafka Streams entre en jeu pour le traitement temps reel :
+
+- **Normalisation** : conversion des messages OCPP/OCPI en un schema unifie (Avro ou Protobuf)
+- **Agregation** : calcul de metriques en temps reel (consommation par borne, par station, par region)
+- **Correlation** : jointure des evenements de session avec les profils utilisateurs et les donnees de tarification
+- **Detection d'anomalies** : identification des comportements inhabituels (consommation aberrante, sessions anormalement longues)
+
+Les topologies Kafka Streams permettent d'enchainer ces operations de maniere declarative et performante.
+
+## Stockage externe
+
+Les donnees traitees par Kafka Streams doivent etre persistees dans des systemes de stockage adaptes aux differents cas d'usage :
+
+- **Cassandra** : ideal pour le stockage de series temporelles a haut volume (historique de consommation, metriques de performance). Sa capacite d'ecriture lineairement scalable s'adapte parfaitement aux flux continus de donnees de bornes.
+- **MongoDB** : adapte pour les donnees semi-structurees et les profils utilisateurs enrichis. Sa flexibilite de schema facilite l'evolution du modele de donnees.
+
+Des connecteurs Kafka Connect Sink pour Cassandra et MongoDB permettent d'alimenter ces bases de donnees automatiquement a partir des topics Kafka.
+
+## Contraintes et considerations techniques
+
+L'implementation de cette architecture comporte des contraintes importantes a prendre en compte :
+
+- **Compromis de latence** : le traitement temps reel de Kafka offre des latences de l'ordre de la milliseconde, mais le bout en bout (borne vers application utilisateur) depend de nombreux facteurs (connectivite reseau, traitement intermediaire, cache). Il faut definir des SLA realistes.
+- **Semantiques de livraison** : le choix entre "exactly once" et "at least once" a des implications directes. L'exactly once garantit qu'aucun evenement n'est traite en double, mais au prix d'une latence plus elevee et d'une complexite accrue. Pour les donnees de facturation, l'exactly once est indispensable. Pour les metriques de monitoring, l'at least once peut suffire.
+- **Scalabilite** : le nombre de partitions Kafka doit etre dimensionne en fonction du nombre de bornes et du volume d'evenements prevu. Un sous-dimensionnement limite le debit, un surdimensionnement gaspille des ressources.
+- **Formation d'equipe** : l'ecosysteme Kafka requiert des competences specifiques. Investir dans la formation des developpeurs et des operateurs est indispensable pour assurer la perennite de la solution.
+
+## Conclusion de la serie
+
+Au fil de ces trois episodes, nous avons vu comment Apache Kafka peut servir de socle technologique pour les reseaux de recharge de vehicules electriques, des benefices strategiques aux details d'implementation. La combinaison de Kafka, Kafka Streams et Kafka Connect offre une plateforme complete pour collecter, traiter et distribuer les donnees en temps reel, ouvrant la voie a des services innovants pour les operateurs et les utilisateurs.

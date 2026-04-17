@@ -1,0 +1,49 @@
+---
+title: "101 ksqlDB - De la Big Data a l'ETL"
+excerpt: "Decouvrez ksqlDB, l'interface SQL construite sur Kafka Streams pour explorer, transformer et analyser vos flux de donnees en temps reel."
+date: "2022-09-27"
+category: "Architecture"
+image: "/images/blog/ksqldb-101.png"
+locale: "fr"
+author: "Jocelyn Pichonnat"
+---
+
+## Qu'est-ce que ksqlDB ?
+
+ksqlDB est une base de donnees de streaming construite sur l'API Kafka Streams. Elle offre une interface SQL familiere pour interroger, transformer et analyser des flux de donnees en temps reel, sans avoir a ecrire de code Java ou Scala. Pour les equipes qui maitrisent deja le SQL, ksqlDB represente un point d'entree accessible dans le monde du traitement de flux.
+
+## Exploration de donnees pour les analystes
+
+L'un des atouts majeurs de ksqlDB est de rendre les donnees Kafka accessibles aux analystes de donnees qui ne sont pas necessairement des developpeurs. Grace a la syntaxe SQL standard, un analyste peut explorer les flux d'evenements, creer des vues materialisees et extraire des insights en temps reel.
+
+Par exemple, une simple requete `SELECT` sur un flux Kafka permet de visualiser les evenements au fur et a mesure qu'ils arrivent. Les analystes peuvent filtrer, agreger et joindre des flux de donnees sans avoir besoin de comprendre les mecanismes internes de Kafka.
+
+## Les operations de fenetrage temporel
+
+Le fenetrage temporel est une fonctionnalite essentielle pour l'analyse de flux de donnees. ksqlDB supporte quatre types de fenetres :
+
+- **Tumbling Window** : fenetres de taille fixe qui ne se chevauchent pas. Exemple : compter le nombre de transactions par tranche de 5 minutes
+- **Hopping Window** : fenetres de taille fixe qui se chevauchent. Exemple : calculer une moyenne mobile toutes les minutes sur une fenetre de 5 minutes
+- **Sliding Window** : fenetres declenchees par l'arrivee de nouveaux evenements dans un intervalle donne
+- **Session Window** : fenetres basees sur l'activite, qui se ferment apres une periode d'inactivite. Exemple : regrouper les clics d'un utilisateur en sessions de navigation
+
+Ces operations de fenetrage permettent de repondre a des questions temporelles que les bases de donnees traditionnelles peinent a traiter en temps reel.
+
+## Transformation et filtrage de donnees
+
+ksqlDB excelle dans la transformation de donnees a la volee. Avec une syntaxe SQL intuitive, vous pouvez :
+
+- Filtrer les evenements selon des criteres specifiques avec `WHERE`
+- Transformer les champs avec des fonctions integrees (extraction de date, manipulation de chaines, calculs mathematiques)
+- Joindre plusieurs flux entre eux ou avec des tables de reference
+- Creer de nouveaux flux enrichis a partir de donnees brutes
+
+Ces capacites font de ksqlDB un outil puissant pour le nettoyage et la preparation de donnees en continu.
+
+## ksqlDB comme ETL integre
+
+Traditionnellement, les pipelines ETL (Extract, Transform, Load) fonctionnent en mode batch : les donnees sont extraites periodiquement, transformees puis chargees dans un entrepot de donnees. Ce processus introduit des latences allant de quelques minutes a plusieurs heures.
+
+ksqlDB repositionne l'ETL dans un paradigme temps reel. L'extraction est assuree par Kafka Connect, la transformation par ksqlDB lui-meme, et le chargement peut etre effectue vers n'importe quel systeme cible via Kafka Connect Sink. Le tout s'execute en continu, eliminant les latences inherentes au traitement batch.
+
+En integrant ksqlDB dans l'ecosysteme Kafka, les organisations beneficient d'un pipeline ETL temps reel, declaratif et scalable, sans avoir a deployer d'infrastructure supplementaire.

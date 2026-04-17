@@ -1,10 +1,10 @@
 import { Service } from "@/lib/types";
 
 export const services: Service[] = [
-  { id: "conseil-strategie", icon: "🎯", image: "/images/services/conseil.webp" },
-  { id: "fintech-assurances", icon: "💰", image: "/images/services/fintech.webp" },
-  { id: "prototypage", icon: "⚡", image: "/images/services/prototypage.webp" },
-  { id: "formation", icon: "📚", image: "/images/services/formation.webp" },
-  { id: "talents", icon: "👥", image: "/images/services/talents.webp" },
-  { id: "audit", icon: "🔍", image: "/images/services/audit.webp" },
+  { id: "conseil-strategie", icon: "/images/icons/conseil-strategie.svg" },
+  { id: "fintech-assurances", icon: "/images/icons/fintech-assurances.svg" },
+  { id: "prototypage", icon: "/images/icons/prototypage.svg" },
+  { id: "formation", icon: "/images/icons/formation.svg" },
+  { id: "talents", icon: "/images/icons/talents.svg" },
+  { id: "audit", icon: "/images/icons/audit.svg" },
 ];

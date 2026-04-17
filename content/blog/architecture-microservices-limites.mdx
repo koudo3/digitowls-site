@@ -1,0 +1,52 @@
+---
+title: "L'architecture micro services : jusqu'ou faut-il aller ?"
+excerpt: "Les microservices ne sont pas toujours la reponse. Explorons les limites de cette architecture et les alternatives disponibles."
+date: "2023-01-25"
+category: "Architecture"
+image: "/images/blog/microservices.gif"
+locale: "fr"
+author: "Jocelyn Pichonnat"
+---
+
+## Le mythe du tout-microservices
+
+Les microservices sont devenus la norme dans l'industrie du logiciel. Popularises par des geants comme Netflix, Amazon et Spotify, ils promettent scalabilite, autonomie des equipes et deploiement independant. Mais cette architecture est-elle adaptee a tous les contextes ? La reponse est non, et il est important de comprendre pourquoi.
+
+## Les monolithes ont encore leur place
+
+Contrairement a la croyance populaire, les monolithes restent une option parfaitement valide dans plusieurs situations :
+
+- **Petites applications** : pour une application avec une equipe reduite (2-5 developpeurs) et un perimetre fonctionnel limite, un monolithe bien structure est plus simple a developper, deployer et maintenir qu'une galaxie de microservices.
+- **Composants fortement couples** : lorsque les modules d'une application partagent enormement de donnees et de logique metier, les separer en microservices cree plus de problemes qu'elle n'en resout. Les appels reseau remplacent les appels de methodes, introduisant latence et points de defaillance.
+- **Phase de decouverte** : en debut de projet, le domaine metier est souvent mal compris. Commencer par un monolithe permet d'explorer et de definir les frontieres du domaine avant de decomposer.
+
+## Le piege de la decomposition atomique
+
+L'un des pieges les plus courants est de pousser la decomposition trop loin. Certaines equipes creent des microservices pour chaque entite de leur modele de donnees : un service Client, un service Adresse, un service Telephone... Le resultat est une complexite operationnelle explosive.
+
+Chaque microservice supplementaire implique :
+
+- Un pipeline CI/CD additionnel a maintenir
+- Des logs et des metriques a surveiller
+- Des communications reseau a securiser et a deboguer
+- Une gestion de la coherence des donnees distribuees
+
+Quand le nombre de microservices depasse la capacite de l'equipe a les gerer, la productivite chute et la fiabilite du systeme se degrade.
+
+## L'architecture evenementielle comme complement
+
+Plutot que de decomposer a l'extreme, l'architecture evenementielle offre une approche complementaire elegante. Avec Apache Kafka comme colonne vertebrale, les services communiquent de maniere asynchrone via des evenements.
+
+Cette approche preserve les avantages du decouplage sans imposer une granularite excessive. Un service peut rester relativement large en termes de perimetre fonctionnel tout en etant faiblement couple aux autres services grace a la communication par evenements.
+
+## Preconiser l'equilibre
+
+La cle est de trouver l'equilibre adapte a votre contexte. Voici quelques principes directeurs :
+
+- Decomposez selon les frontieres du domaine metier (Domain-Driven Design), pas selon les entites techniques
+- Privilegiez des services de taille moyenne qui encapsulent un sous-domaine complet
+- Utilisez la communication asynchrone (evenements) pour reduire le couplage entre services
+- Ne decomposez que lorsque le besoin est reel (scalabilite differente, equipe autonome, technologie specifique)
+- Mesurez la complexite operationnelle et ajustez en consequence
+
+L'architecture ideale n'est ni un monolithe rigide ni un ensemble de nano-services ingerable. C'est un systeme equilibre, adapte a la taille de votre equipe, a la complexite de votre domaine et a vos contraintes operationnelles.
