@@ -70,9 +70,9 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-sm mb-4">{t("navigation")}</h4>
             <ul className="space-y-2 text-sm text-white/50">
-              <li><Link href={`/${locale}/services`} className="hover:text-white transition-colors">{tNav("services")}</Link></li>
-              <li><Link href={`/${locale}/realisations`} className="hover:text-white transition-colors">{tNav("realisations")}</Link></li>
-              <li><Link href={`/${locale}/a-propos`} className="hover:text-white transition-colors">{tNav("about")}</Link></li>
+              <li><a href={`/${locale}/#services`} className="hover:text-white transition-colors">{tNav("services")}</a></li>
+              <li><a href={`/${locale}/#realisations`} className="hover:text-white transition-colors">{tNav("realisations")}</a></li>
+              <li><a href={`/${locale}/#about`} className="hover:text-white transition-colors">{tNav("about")}</a></li>
               <li><Link href={`/${locale}/blog`} className="hover:text-white transition-colors">{tNav("blog")}</Link></li>
             </ul>
           </div>
@@ -81,9 +81,9 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/50">
               {services.map((service) => (
                 <li key={service.id}>
-                  <Link href={`/${locale}/services#${service.id}`} className="hover:text-white transition-colors">
+                  <a href={`/${locale}/#services`} className="hover:text-white transition-colors">
                     {tServices(`${service.id}.title`)}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
