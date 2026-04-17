@@ -66,7 +66,9 @@ export default function ContactForm() {
         <label className="block text-sm text-white/70 mb-2">{t("message")} *</label>
         <textarea name="message" required rows={5} className={`${inputClass} resize-none`} />
       </div>
-      <Button type="submit" variant="primary">{status === "loading" ? "..." : t("submit")}</Button>
+      <div className="text-center">
+        <Button type="submit" variant="primary">{status === "loading" ? "..." : t("submit")}</Button>
+      </div>
       {status === "success" && <p className="text-green-400 text-sm">{t("success")}</p>}
       {status === "error" && <p className="text-red-400 text-sm">{t("error")}</p>}
     </form>
