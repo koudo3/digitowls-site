@@ -46,7 +46,7 @@ export default function ServiceBlock({ service, reversed }: ServiceBlockProps) {
                 </li>
               ))}
             </ul>
-            <Button href={`/${locale}/contact`} variant="primary">{t("cta")}</Button>
+            <Button href={`/${locale}/#contact`} variant="primary">{t("cta")}</Button>
           </div>
         </div>
       </div>

@@ -81,9 +81,9 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/50">
               {services.map((service) => (
                 <li key={service.id}>
-                  <a href={`/${locale}/#services`} className="hover:text-white transition-colors">
+                  <Link href={`/${locale}/services/${service.id}`} className="hover:text-white transition-colors">
                     {tServices(`${service.id}.title`)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
