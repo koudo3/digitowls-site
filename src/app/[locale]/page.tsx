@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import Hero from "@/components/home/Hero";
 import ServicesGrid from "@/components/home/ServicesGrid";
 import ClientLogos from "@/components/home/ClientLogos";
@@ -22,7 +22,6 @@ export default function HomePage() {
   const tServices = useTranslations("services_data");
   const tAbout = useTranslations("about_page");
   const tContact = useTranslations("contact_page");
-  const locale = useLocale();
   const [activeCategory, setActiveCategory] = useState("all");
 
   const categories = Array.from(new Set(projects.map((p) => p.category)));
