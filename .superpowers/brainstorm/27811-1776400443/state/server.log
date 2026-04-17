@@ -1,3 +1,4 @@
 {"type":"server-started","port":62389,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:62389","screen_dir":"/Users/octavekoudoyor/digitowls-site/.superpowers/brainstorm/27811-1776400443/content","state_dir":"/Users/octavekoudoyor/digitowls-site/.superpowers/brainstorm/27811-1776400443/state"}
 {"type":"screen-added","file":"/Users/octavekoudoyor/digitowls-site/.superpowers/brainstorm/27811-1776400443/content/onepage-structure.html"}
 {"type":"screen-added","file":"/Users/octavekoudoyor/digitowls-site/.superpowers/brainstorm/27811-1776400443/content/waiting.html"}
+{"type":"server-stopped","reason":"idle timeout"}

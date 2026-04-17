@@ -17,7 +17,7 @@ export default function Hero() {
         <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-8">{t("description")}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button href={`/${locale}/produits/cadrage-projet-ai`} variant="primary">{t("cta_primary")}</Button>
-          <Button href={`/${locale}/services`} variant="outline">{t("cta_secondary")}</Button>
+          <Button href="#services" variant="outline">{t("cta_secondary")}</Button>
         </div>
       </AnimatedSection>
     </section>
