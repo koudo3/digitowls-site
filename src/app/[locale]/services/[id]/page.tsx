@@ -1,14 +1,13 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import { notFound } from "next/navigation";
 import { services } from "@/data/services";
 import ServiceBlock from "@/components/services/ServiceBlock";
 
-export function generateStaticParams() {
-  return services.map((s) => ({ id: s.id }));
-}
-
-export default async function ServicePage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const service = services.find((s) => s.id === id);
+export default function ServicePage() {
+  const params = useParams<{ id: string }>();
+  const service = services.find((s) => s.id === params.id);
   if (!service) notFound();
 
   return (
