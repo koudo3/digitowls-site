@@ -14,7 +14,7 @@ export default function ProjectCard({ title, description, image, tags, type, dat
   return (
     <AnimatedSection>
       <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-secondary/50 transition-colors">
-        <Image src={image} alt={title} width={400} height={250} className="w-full h-48 object-cover" />
+        <Image src={image} alt={title} width={400} height={250} className="w-full h-28 object-contain p-4 bg-white/10" />
         <div className="p-6">
           <div className="flex items-center gap-2 mb-2">
             {type && <span className="text-xs bg-accent/20 text-accent px-2 py-1 rounded font-bold">{type}</span>}

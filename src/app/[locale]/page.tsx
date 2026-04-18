@@ -12,6 +12,7 @@ import ProjectCard from "@/components/realisations/ProjectCard";
 import MissionSection from "@/components/about/MissionSection";
 import TeamGrid from "@/components/about/TeamGrid";
 import ValuesSection from "@/components/about/ValuesSection";
+import ApprocheDOer from "@/components/about/ApprocheDOer";
 import ContactForm from "@/components/contact/ContactForm";
 import CalendlyEmbed from "@/components/contact/CalendlyEmbed";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -74,6 +75,7 @@ export default function HomePage() {
           <MissionSection />
           <TeamGrid />
           <ValuesSection />
+          <ApprocheDOer />
         </div>
       </section>
 

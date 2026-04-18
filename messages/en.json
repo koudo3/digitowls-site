@@ -286,6 +286,19 @@
       "bio": "Artificial intelligence expert at DigitOwls, Olivier contributes to the research and development of advanced AI solutions."
     }
   },
+  "approche_doer": {
+    "title": "A",
+    "title_highlight": "\"DOer\" approach",
+    "subtitle": "based on experimentation with (very) concrete use cases",
+    "step_1": "Use Case",
+    "step_2": "Proof of Concept / Experimentation",
+    "iterations": "Iterations",
+    "step_3_line1": "Industrialization",
+    "step_3_line2": "Integration",
+    "value_1": "Collaboration",
+    "value_2": "Transparency",
+    "value_3": "Proximity"
+  },
   "values_data": {
     "innovation": { "title": "Innovation", "description": "We push the boundaries of AI to create cutting-edge solutions." },
     "collaboration": { "title": "Collaboration", "description": "We work hand in hand with our clients to achieve their goals." },
