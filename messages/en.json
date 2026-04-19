@@ -72,53 +72,41 @@
     "description": "Complete AI solutions for every step of your digital transformation."
   },
   "realisations_page": {
-    "title": "Portfolio & Case Studies",
-    "description": "Concrete results, measurable value. Every project we support is designed to reduce risks, accelerate transformation and demonstrate ROI before scaling up.",
+    "eyebrow": "Projects",
+    "title": "Concrete results,<br>measurable <em>value.</em>",
+    "description": "Our projects",
     "filter_all": "All",
-    "projects": {
-      "assistant-banque": {
-        "title": "AI Assistant — Banking & Finance",
-        "description": "Customer conversational agent, AI compliance assistant, financial report synthesizer.",
-        "type": "AI Assistant",
-        "date": "2025",
-        "tags": ["AI", "Banking", "AI Assistant"]
-      },
-      "plateforme-data": {
-        "title": "Real-time Data Platform",
-        "description": "Design and deployment of a multi-cloud data foundation based on Apache Kafka for Desjardins. A robust event-driven architecture at the core of critical use cases: security, advanced analytics and AI.",
-        "type": "Data Platform",
-        "date": "April 2023",
-        "tags": ["Data", "Kafka", "Cloud"]
-      },
-      "assistant-securite": {
-        "title": "AI Assistant — Security",
-        "description": "Logistics security detection assistance agents for Fnac.",
-        "type": "AI Assistant",
-        "date": "2025",
-        "tags": ["AI", "Security", "Logistics"]
-      },
-      "assistant-rh": {
-        "title": "AI Assistant — Human Resources",
-        "description": "Intelligent HR assistant, HR data analysis tool and recruitment process automation.",
-        "type": "AI Assistant",
-        "date": "2025",
-        "tags": ["AI", "HR", "AI Assistant"]
-      },
-      "assistant-sante": {
-        "title": "AI Assistants — Healthcare",
-        "description": "Conversational voice agent, predictive planning assistant, machine learning solution for the healthcare sector.",
-        "type": "Healthcare AI Assistant",
-        "date": "2025",
-        "tags": ["AI", "Healthcare", "ML"]
-      },
-      "assistant-ecommerce": {
-        "title": "AI Assistant — E-commerce",
-        "description": "Product Assistant Manager (PAM), quality control agent, multilingual generation tool for Moncler.",
-        "type": "E-commerce AI",
-        "date": "2025",
-        "tags": ["AI", "E-commerce", "Multilingual"]
-      }
-    }
+    "case_1": {
+      "tag": "AI Assistant",
+      "year": "2025",
+      "title": "Banking & <em>finance</em>",
+      "client": "Customer conversational agent, AI compliance assistant, financial report synthesizer."
+    },
+    "case_2": {
+      "tag": "Desjardins · Kafka",
+      "year": "2023",
+      "title": "Real-time <em>data</em> platform",
+      "client": "Multi-cloud Apache Kafka foundation — event-driven architecture at the heart of critical use cases."
+    },
+    "case_3": {
+      "tag": "Fnac · Security",
+      "year": "2025",
+      "title": "<em>Logistics</em> detection",
+      "client": "Logistics security detection assistance agents."
+    },
+    "case_4": {
+      "tag": "HR",
+      "year": "2025",
+      "title": "<em>HR</em> assistant",
+      "client": "HR data analysis and recruitment automation."
+    },
+    "case_5": {
+      "tag": "Health · ML",
+      "year": "2025",
+      "title": "<em>Health</em> assistants",
+      "client": "Voice agent, predictive planning, ML solutions."
+    },
+    "projects": {}
   },
   "about_page": {
     "title": "About Us",

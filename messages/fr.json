@@ -72,53 +72,41 @@
     "description": "Des solutions IA complètes pour chaque étape de votre transformation numérique."
   },
   "realisations_page": {
-    "title": "Réalisations et Études de cas",
-    "description": "Des résultats concrets, une valeur mesurable. Chaque projet que nous accompagnons est conçu pour réduire les risques, accélérer la transformation et démontrer le retour sur investissement avant le passage à grande échelle.",
+    "eyebrow": "Réalisations",
+    "title": "Des résultats concrets,<br>une valeur <em>mesurable.</em>",
+    "description": "Nos réalisations",
     "filter_all": "Tous",
-    "projects": {
-      "assistant-banque": {
-        "title": "Assistant AI — Banques et finances",
-        "description": "Agent conversationnel client, assistant conformité IA, synthétiseur de rapports financiers.",
-        "type": "AI Assistant",
-        "date": "2025",
-        "tags": ["IA", "Banque", "Assistant AI"]
-      },
-      "plateforme-data": {
-        "title": "Plateforme data temps réel",
-        "description": "Conception et déploiement d'une fondation data multi-cloud basée sur Apache Kafka pour Desjardins. Une architecture événementielle robuste au cœur des usages critiques : sécurité, analytique avancée et IA.",
-        "type": "Plateforme Data",
-        "date": "Avril 2023",
-        "tags": ["Data", "Kafka", "Cloud"]
-      },
-      "assistant-securite": {
-        "title": "Assistant AI — Sécurité",
-        "description": "Agents d'assistance de détection de sécurité logistique pour Fnac.",
-        "type": "AI Assistant",
-        "date": "2025",
-        "tags": ["IA", "Sécurité", "Logistique"]
-      },
-      "assistant-rh": {
-        "title": "Assistant AI — Ressources Humaines",
-        "description": "Assistant RH intelligent, outil d'analyse de données RH et automatisation des processus de recrutement.",
-        "type": "AI Assistant",
-        "date": "2025",
-        "tags": ["IA", "RH", "Assistant AI"]
-      },
-      "assistant-sante": {
-        "title": "Assistants AI — Santé",
-        "description": "Agent vocal conversationnel, assistant prédictif de planification, solution de machine learning pour le secteur de la santé.",
-        "type": "Assistant AI Santé",
-        "date": "2025",
-        "tags": ["IA", "Santé", "ML"]
-      },
-      "assistant-ecommerce": {
-        "title": "Assistant AI — E-commerce",
-        "description": "Product Assistant Manager (PAM), agent de contrôle qualité, outil de génération multilingue pour Moncler.",
-        "type": "E-commerce AI",
-        "date": "2025",
-        "tags": ["IA", "E-commerce", "Multilingue"]
-      }
-    }
+    "case_1": {
+      "tag": "Assistant AI",
+      "year": "2025",
+      "title": "Banques & <em>finances</em>",
+      "client": "Agent conversationnel client, assistant conformité IA, synthétiseur de rapports financiers."
+    },
+    "case_2": {
+      "tag": "Desjardins · Kafka",
+      "year": "2023",
+      "title": "Plateforme <em>data</em> temps réel",
+      "client": "Fondation multi-cloud Apache Kafka — architecture événementielle au cœur des usages critiques."
+    },
+    "case_3": {
+      "tag": "Fnac · Sécurité",
+      "year": "2025",
+      "title": "Détection <em>logistique</em>",
+      "client": "Agents d'assistance de détection de sécurité logistique."
+    },
+    "case_4": {
+      "tag": "RH",
+      "year": "2025",
+      "title": "Assistant <em>RH</em>",
+      "client": "Analyse de données RH et automatisation du recrutement."
+    },
+    "case_5": {
+      "tag": "Santé · ML",
+      "year": "2025",
+      "title": "Assistants <em>santé</em>",
+      "client": "Agent vocal, planification prédictive, solutions ML."
+    },
+    "projects": {}
   },
   "about_page": {
     "title": "Qui sommes-nous",
