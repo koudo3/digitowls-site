@@ -244,6 +244,23 @@
     "cta_advisor": "Parler à un conseiller"
   },
   "footer": {
+    "tagline": "Firme de consultation en intelligence artificielle. Représentant exclusif de Proxym au Canada. Basée à Montréal.",
+    "col_services": "Services",
+    "svc_1": "Conseil & Stratégie",
+    "svc_2": "Fintech & Assurances",
+    "svc_3": "Prototypage POC",
+    "svc_4": "Formation IA",
+    "svc_5": "Placement Talents",
+    "svc_6": "Audit Technologique",
+    "col_contact": "Contact",
+    "col_nav": "Navigation",
+    "nav_blog": "Blog",
+    "nav_careers": "Carrières",
+    "nav_products": "Produits",
+    "nav_brand": "Image de marque",
+    "nav_privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés",
+    "made_in": "Conçu avec soin à Montréal · Québec, Canada",
     "description": "Firme de consultation en intelligence artificielle.",
     "navigation": "Navigation",
     "our_services": "Nos services",
@@ -252,8 +269,7 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions générales",
     "branding": "Image de marque",
-    "follow_us": "Suivez-nous !",
-    "rights": "Tous droits réservés."
+    "follow_us": "Suivez-nous"
   },
   "team_data": {
     "octave-koudoyor": {

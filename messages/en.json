@@ -244,6 +244,23 @@
     "cta_advisor": "Talk to an advisor"
   },
   "footer": {
+    "tagline": "Artificial intelligence consulting firm. Exclusive representative of Proxym in Canada. Based in Montreal.",
+    "col_services": "Services",
+    "svc_1": "Consulting & Strategy",
+    "svc_2": "Fintech & Insurance",
+    "svc_3": "POC Prototyping",
+    "svc_4": "AI Training",
+    "svc_5": "Talent Placement",
+    "svc_6": "Technology Audit",
+    "col_contact": "Contact",
+    "col_nav": "Navigation",
+    "nav_blog": "Blog",
+    "nav_careers": "Careers",
+    "nav_products": "Products",
+    "nav_brand": "Brand Guidelines",
+    "nav_privacy": "Privacy Policy",
+    "rights": "All rights reserved",
+    "made_in": "Crafted with care in Montreal · Quebec, Canada",
     "description": "Artificial intelligence consulting firm.",
     "navigation": "Navigation",
     "our_services": "Our Services",
@@ -252,8 +269,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
     "branding": "Brand Guidelines",
-    "follow_us": "Follow us!",
-    "rights": "All rights reserved."
+    "follow_us": "Follow us"
   },
   "team_data": {
     "octave-koudoyor": {
