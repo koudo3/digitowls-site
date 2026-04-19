@@ -37,17 +37,18 @@
     "title": "L'IA au service de votre croissance"
   },
   "clients_section": {
-    "title": "Nos clients et partenaires",
-    "testimonials_title": "Témoignages",
+    "label": "Ils nous ont confié leur transformation IA",
+    "title": "Nos clients",
+    "testimonials_title": "Ce qu'ils disent de nous",
     "testimonial_1": {
-      "quote": "DigitOwls a été un partenaire précieux pour notre entreprise. Leur approche professionnelle et leurs solutions innovantes ont considérablement amélioré notre sécurité informatique.",
+      "quote": "digitowls a été un partenaire précieux. Leur approche professionnelle et leurs solutions innovantes ont considérablement amélioré notre sécurité informatique.",
       "author": "Jeanne Dupont",
-      "role": "VP. Opérations, Banque Nationale"
+      "role": "VP. Opérations · Banque Nationale"
     },
     "testimonial_2": {
-      "quote": "Travailler avec DigitOwls a été une expérience transformative. Leurs conseils précis et leur expertise ont ouvert de nouvelles perspectives pour notre organisation.",
-      "author": "Ahmed Kone",
-      "role": ""
+      "quote": "Leur expertise en IA nous a permis de transformer nos processus.",
+      "author": "Marc Tremblay",
+      "role": "Directeur IT"
     }
   },
   "cta_banner": {

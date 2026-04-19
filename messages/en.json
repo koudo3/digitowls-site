@@ -37,17 +37,18 @@
     "title": "AI driving your growth"
   },
   "clients_section": {
-    "title": "Our Clients and Partners",
-    "testimonials_title": "Testimonials",
+    "label": "They trusted us with their AI transformation",
+    "title": "Our clients",
+    "testimonials_title": "What they say about us",
     "testimonial_1": {
-      "quote": "DigitOwls has been a valuable partner for our company. Their professional approach and innovative solutions have significantly improved our IT security.",
+      "quote": "digitowls has been an invaluable partner. Their professional approach and innovative solutions have significantly improved our IT security.",
       "author": "Jeanne Dupont",
-      "role": "VP. Operations, Banque Nationale"
+      "role": "VP. Operations · Banque Nationale"
     },
     "testimonial_2": {
-      "quote": "Working with DigitOwls has been a transformative experience. Their precise advice and expertise have opened new perspectives for our organization.",
-      "author": "Ahmed Kone",
-      "role": ""
+      "quote": "Their AI expertise has allowed us to transform our processes.",
+      "author": "Marc Tremblay",
+      "role": "IT Director"
     }
   },
   "cta_banner": {

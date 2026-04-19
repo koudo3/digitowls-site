@@ -1,55 +1,52 @@
+"use client";
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { clients } from "@/data/clients";
-import SectionHeading from "@/components/ui/SectionHeading";
-import AnimatedSection from "@/components/ui/AnimatedSection";
-
-const testimonials = ["testimonial_1", "testimonial_2"] as const;
 
 export default function ClientLogos() {
   const t = useTranslations("clients_section");
+
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <SectionHeading title={t("title")} />
-        <AnimatedSection>
-          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12 opacity-70">
+    <div className="bg-white py-14 border-b border-border overflow-hidden">
+      <div className="max-w-container mx-auto px-8 flex items-center gap-14 max-md:flex-col max-md:items-start max-md:gap-7">
+        <div className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-dim shrink-0 max-w-[180px] leading-relaxed">
+          {t("label")}
+        </div>
+        <div
+          className="flex-1 overflow-hidden relative"
+          style={{
+            maskImage: "linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%)",
+          }}
+        >
+          <div className="flex items-center gap-16 w-max animate-marquee hover:[animation-play-state:paused]">
+            {/* Set 1 */}
             {clients.map((client) => (
               <Image
                 key={client.name}
                 src={client.logo}
                 alt={client.name}
-                width={140}
-                height={70}
-                className="grayscale hover:grayscale-0 transition-all object-contain"
+                width={150}
+                height={38}
+                className="h-[38px] w-auto max-w-[150px] object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 hover:scale-[1.08] transition-all duration-300 shrink-0"
               />
             ))}
-          </div>
-        </AnimatedSection>
-
-        <div className="mt-16">
-          <h3 className="text-2xl font-heading font-bold text-center mb-10">
-            {t("testimonials_title")}
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((key, i) => (
-              <AnimatedSection key={key} delay={i * 0.15}>
-                <blockquote className="bg-white/5 border border-white/10 rounded-xl p-6">
-                  <p className="text-white/70 italic mb-4">
-                    &ldquo;{t(`${key}.quote`)}&rdquo;
-                  </p>
-                  <footer className="text-sm">
-                    <span className="text-accent font-bold">{t(`${key}.author`)}</span>
-                    {t(`${key}.role`) && (
-                      <span className="text-white/50"> — {t(`${key}.role`)}</span>
-                    )}
-                  </footer>
-                </blockquote>
-              </AnimatedSection>
+            {/* Set 2 (duplicate for seamless loop) */}
+            {clients.map((client) => (
+              <Image
+                key={`dup-${client.name}`}
+                src={client.logo}
+                alt=""
+                width={150}
+                height={38}
+                className="h-[38px] w-auto max-w-[150px] object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 hover:scale-[1.08] transition-all duration-300 shrink-0"
+                aria-hidden
+              />
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
