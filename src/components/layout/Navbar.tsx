@@ -1,14 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
-import Button from "@/components/ui/Button";
 
-const SECTION_IDS = ["services", "realisations", "about", "contact"];
+const SECTION_IDS = ["services", "proxym", "approche", "realisations", "equipe", "carrieres"];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,17 +18,37 @@ export default function Navbar() {
 
   const isHomePage = pathname === `/${locale}` || pathname === `/${locale}/`;
 
-  const anchorLinks = [
+  const navLinks = [
     { id: "services", label: t("services") },
+    { id: "proxym", label: t("proxym") },
+    { id: "approche", label: t("approach") },
     { id: "realisations", label: t("realisations") },
-    { id: "about", label: t("about") },
+    { id: "equipe", label: t("team") },
+    { id: "carrieres", label: t("careers"), badge: "3" },
   ];
 
-  const pageLinks = [
-    { href: `/${locale}/produits`, label: t("products") },
-    { href: `/${locale}/blog`, label: t("blog") },
-    { href: `/${locale}/carrieres`, label: t("careers") },
-  ];
+  const updateActiveNav = useCallback(() => {
+    if (!isHomePage) return;
+    const navHeight = 60;
+    const triggerY = window.scrollY + navHeight + 80;
+    let activeId: string | null = null;
+
+    for (const id of SECTION_IDS) {
+      const el = document.getElementById(id);
+      if (!el) continue;
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      const bottom = top + el.offsetHeight;
+      if (top <= triggerY && bottom > triggerY) {
+        activeId = id;
+      }
+    }
+
+    if (!activeId && window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+      activeId = SECTION_IDS[SECTION_IDS.length - 1];
+    }
+
+    setActiveSection(activeId || "");
+  }, [isHomePage]);
 
   useEffect(() => {
     if (!isHomePage) {
@@ -37,86 +56,96 @@ export default function Navbar() {
       return;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        }
-      },
-      { threshold: 0.1, rootMargin: "-80px 0px -50% 0px" }
-    );
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateActiveNav();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
 
-    for (const id of SECTION_IDS) {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", updateActiveNav);
+    updateActiveNav();
 
-    return () => observer.disconnect();
-  }, [isHomePage]);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", updateActiveNav);
+    };
+  }, [isHomePage, updateActiveNav]);
 
-  const getAnchorHref = (id: string) => {
-    if (isHomePage) return `#${id}`;
-    return `/${locale}/#${id}`;
-  };
-
-  const getContactHref = () => {
-    if (isHomePage) return "#contact";
-    return `/${locale}/#contact`;
-  };
-
-  const anchorLinkClass = (id: string) => {
-    const base = "text-sm transition-colors";
-    if (activeSection === id) {
-      return `${base} text-white border-b-2 border-secondary pb-1`;
-    }
-    return `${base} text-white/70 hover:text-white`;
-  };
+  const getHref = (id: string) => (isHomePage ? `#${id}` : `/${locale}/#${id}`);
 
   return (
-    <nav className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link href={`/${locale}`} className="flex items-center gap-2">
-            <Image src="/images/logo/owl-4.svg" alt="DigiTowls" width={32} height={32} />
-            <span className="font-body font-bold text-lg">digitowls</span>
-          </Link>
-          <div className="hidden md:flex items-center gap-6">
-            {anchorLinks.map((link) => (
-              <a key={link.id} href={getAnchorHref(link.id)} className={anchorLinkClass(link.id)}>{link.label}</a>
-            ))}
-            {pageLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm text-white/70 hover:text-white transition-colors">{link.label}</Link>
-            ))}
-            <LanguageSwitcher />
-            <Button href={getContactHref()} variant="secondary">{t("contact")}</Button>
-          </div>
-          <button className="md:hidden text-white" onClick={() => setMobileOpen(!mobileOpen)}>
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              {mobileOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+    <nav className="sticky top-0 z-[100] bg-surface/90 backdrop-blur-[14px] border-b border-border">
+      <div className="max-w-container mx-auto px-8 py-3.5 flex items-center justify-between">
+        <Link href={`/${locale}`} className="flex items-center gap-3 text-primary">
+          <Image src="/images/logo/owl-4.svg" alt="digitowls" width={44} height={44} />
+          <span className="font-brand text-[26px] font-extrabold tracking-tight leading-none">digitowls</span>
+        </Link>
+
+        <ul className="hidden lg:flex items-center gap-9 text-sm font-medium text-ink list-none">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a
+                href={getHref(link.id)}
+                className={`relative py-1.5 transition-colors hover:text-primary after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-accent after:transition-[width] after:duration-300 ${
+                  activeSection === link.id
+                    ? "text-primary font-medium after:w-full"
+                    : "after:w-0 hover:after:w-full"
+                }`}
+              >
+                {link.label}
+                {link.badge && (
+                  <span className="inline-flex items-center gap-1 ml-1.5 font-mono text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-accent/15 text-accent border border-accent/30">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent animate-blink" />
+                    {link.badge}
+                  </span>
+                )}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div className="hidden lg:flex items-center gap-4">
+          <LanguageSwitcher />
+          <a
+            href={getHref("contact")}
+            className="text-sm font-medium px-5 py-2.5 bg-primary text-white rounded-lg transition-all hover:bg-accent hover:text-primary hover:-translate-y-0.5 inline-flex items-center gap-2"
+          >
+            {t("cta")} →
+          </a>
         </div>
-        {mobileOpen && (
-          <div className="md:hidden pb-4 space-y-2">
-            {anchorLinks.map((link) => (
-              <a key={link.id} href={getAnchorHref(link.id)} className="block text-sm text-white/70 hover:text-white py-2" onClick={() => setMobileOpen(false)}>{link.label}</a>
-            ))}
-            {pageLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="block text-sm text-white/70 hover:text-white py-2" onClick={() => setMobileOpen(false)}>{link.label}</Link>
-            ))}
-            <div className="flex items-center gap-4 pt-2">
-              <LanguageSwitcher />
-              <Button href={getContactHref()} variant="secondary">{t("contact")}</Button>
-            </div>
-          </div>
-        )}
+
+        <button className="lg:hidden text-ink" onClick={() => setMobileOpen(!mobileOpen)}>
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {mobileOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
       </div>
+
+      {mobileOpen && (
+        <div className="lg:hidden px-8 pb-4 space-y-2">
+          {navLinks.map((link) => (
+            <a key={link.id} href={getHref(link.id)} className="block text-sm text-ink-dim hover:text-primary py-2" onClick={() => setMobileOpen(false)}>
+              {link.label}
+            </a>
+          ))}
+          <div className="flex items-center gap-4 pt-2">
+            <LanguageSwitcher />
+            <a href={getHref("contact")} className="text-sm font-medium px-5 py-2.5 bg-primary text-white rounded-lg">
+              {t("cta")} →
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

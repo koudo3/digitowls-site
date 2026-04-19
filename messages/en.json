@@ -1,12 +1,16 @@
 {
   "nav": {
     "services": "Services",
-    "products": "Products",
-    "realisations": "Portfolio",
-    "about": "About",
-    "blog": "Blog",
+    "proxym": "Proxym",
+    "approach": "Approach",
+    "realisations": "Projects",
+    "team": "Team",
     "careers": "Careers",
-    "contact": "Contact"
+    "about": "About",
+    "products": "Products",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Start a project"
   },
   "hero": {
     "subtitle": "AI Consulting Firm",

@@ -1,12 +1,16 @@
 {
   "nav": {
     "services": "Services",
-    "products": "Produits",
+    "proxym": "Proxym",
+    "approach": "Approche",
     "realisations": "Réalisations",
-    "about": "À propos",
-    "blog": "Blog",
+    "team": "Équipe",
     "careers": "Carrières",
-    "contact": "Contact"
+    "about": "À propos",
+    "products": "Produits",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Démarrer un projet"
   },
   "hero": {
     "subtitle": "Firme de consultation IA",
