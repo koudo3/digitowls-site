@@ -12,7 +12,7 @@ export default function ServicePage() {
 
   return (
     <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-container mx-auto px-8 max-md:px-5">
         <ServiceBlock service={service} reversed={false} />
       </div>
     </section>
