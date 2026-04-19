@@ -14,8 +14,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-12 pb-14 border-b border-white/[0.08] mb-8">
           {/* Brand */}
           <div>
-            <div className="block max-w-[220px] mb-5">
-              <Image src="/images/logo/owl-4.svg" alt="digitowls" width={180} height={60} className="w-full h-auto" />
+            <div className="block max-w-[120px] mb-5">
+              <Image src="/images/logo/owl-4.svg" alt="digitowls" width={120} height={40} className="w-full h-auto" />
             </div>
             <p className="text-white/60 max-w-[40ch] text-sm leading-relaxed font-light mb-6">{t("tagline")}</p>
             <div className="flex gap-2.5">

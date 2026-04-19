@@ -15,6 +15,7 @@ export default function TeamSection() {
           <h2 className="section-title reveal">
             {t.rich("title", {
               em: (chunks) => <em>{chunks}</em>,
+              br: () => <br />,
             })}
           </h2>
           <TeamGrid />
@@ -27,6 +28,7 @@ export default function TeamSection() {
           <h2 className="section-title reveal">
             {t.rich("values_title", {
               em: (chunks) => <em>{chunks}</em>,
+              br: () => <br />,
             })}
           </h2>
           <ValuesSection />

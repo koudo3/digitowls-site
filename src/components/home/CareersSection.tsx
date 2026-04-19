@@ -18,6 +18,7 @@ export default function CareersSection() {
         <h2 className="section-title reveal">
           {t.rich("title", {
             em: (chunks) => <em>{chunks}</em>,
+            br: () => <br />,
           })}
         </h2>
         <p className="reveal text-lg leading-relaxed text-ink-dim max-w-[62ch] -mt-10 mb-14 font-light">

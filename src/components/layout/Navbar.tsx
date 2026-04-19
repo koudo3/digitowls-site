@@ -83,7 +83,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-[100] bg-surface/90 backdrop-blur-[14px] border-b border-border">
       <div className="max-w-container mx-auto px-8 py-3.5 flex items-center justify-between">
         <Link href={`/${locale}`} className="flex items-center gap-3 text-primary">
-          <Image src="/images/logo/owl-4.svg" alt="digitowls" width={44} height={44} />
+          <Image src="/images/logo/digitowls-icon.svg" alt="digitowls" width={44} height={44} className="mix-blend-multiply" />
           <span className="font-brand text-[26px] font-extrabold tracking-tight leading-none">digitowls</span>
         </Link>
 

@@ -105,41 +105,26 @@ export default function OwlVisual() {
             <circle cx="165" cy="102" r="3" fill="#FFFFFF" />
             <path d="M 132 128 L 140 145 L 148 128 Z" fill="#F8BE1C" />
             <g>
-              <circle className="animate-orbit-pulse" cx="220" cy="50" r="2.8" fill="#2AB0C1" />
-              <circle className="animate-orbit-pulse" style={{ animationDelay: "0.6s" }} cx="245" cy="110" r="2.2" fill="#F8BE1C" />
-              <circle className="animate-orbit-pulse" style={{ animationDelay: "1.2s" }} cx="55" cy="55" r="2.8" fill="#F8BE1C" />
-              <circle className="animate-orbit-pulse" style={{ animationDelay: "1.8s" }} cx="30" cy="115" r="2.2" fill="#2AB0C1" />
-              <circle className="animate-orbit-pulse" style={{ animationDelay: "2.4s" }} cx="145" cy="20" r="2" fill="#2AB0C1" />
+              <circle className="animate-orbit-pulse" style={{ transformOrigin: "center", transformBox: "fill-box" as never }} cx="220" cy="50" r="2.8" fill="#2AB0C1" />
+              <circle className="animate-orbit-pulse" style={{ animationDelay: "0.6s", transformOrigin: "center", transformBox: "fill-box" as never }} cx="245" cy="110" r="2.2" fill="#F8BE1C" />
+              <circle className="animate-orbit-pulse" style={{ animationDelay: "1.2s", transformOrigin: "center", transformBox: "fill-box" as never }} cx="55" cy="55" r="2.8" fill="#F8BE1C" />
+              <circle className="animate-orbit-pulse" style={{ animationDelay: "1.8s", transformOrigin: "center", transformBox: "fill-box" as never }} cx="30" cy="115" r="2.2" fill="#2AB0C1" />
+              <circle className="animate-orbit-pulse" style={{ animationDelay: "2.4s", transformOrigin: "center", transformBox: "fill-box" as never }} cx="145" cy="20" r="2" fill="#2AB0C1" />
             </g>
             <g>
               <line x1="100" y1="242" x2="180" y2="242" stroke="#FFFFFF" strokeOpacity="0.2" strokeWidth="0.7" />
-              <rect className="origin-bottom animate-bar-dance" x="103" y="210" width="6" height="30" fill="#FFFFFF" opacity="0.7" />
-              <rect className="origin-bottom animate-bar-dance" style={{ animationDelay: "0.1s", animationDuration: "1.1s" }} x="113" y="195" width="6" height="45" fill="#2AB0C1" />
-              <rect className="origin-bottom animate-bar-dance" style={{ animationDelay: "0.3s", animationDuration: "1.5s" }} x="123" y="180" width="6" height="60" fill="#FFFFFF" opacity="0.95" />
-              <rect className="origin-bottom animate-bar-dance" style={{ animationDelay: "0.5s", animationDuration: "1.2s" }} x="133" y="200" width="6" height="40" fill="#F8BE1C" />
-              <rect className="origin-bottom animate-bar-dance" style={{ animationDelay: "0.25s", animationDuration: "1.4s" }} x="143" y="185" width="6" height="55" fill="#2AB0C1" />
-              <rect className="origin-bottom animate-bar-dance" style={{ animationDelay: "0.15s", animationDuration: "1.0s" }} x="153" y="215" width="6" height="25" fill="#FFFFFF" opacity="0.75" />
-              <rect className="origin-bottom animate-bar-dance" style={{ animationDelay: "0.4s", animationDuration: "1.3s" }} x="163" y="195" width="6" height="45" fill="#F8BE1C" />
+              <rect className="animate-bar-dance" style={{ transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="103" y="210" width="6" height="30" fill="#FFFFFF" opacity="0.7" />
+              <rect className="animate-bar-dance" style={{ animationDelay: "0.1s", animationDuration: "1.1s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="113" y="195" width="6" height="45" fill="#2AB0C1" />
+              <rect className="animate-bar-dance" style={{ animationDelay: "0.3s", animationDuration: "1.5s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="123" y="180" width="6" height="60" fill="#FFFFFF" opacity="0.95" />
+              <rect className="animate-bar-dance" style={{ animationDelay: "0.5s", animationDuration: "1.2s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="133" y="200" width="6" height="40" fill="#F8BE1C" />
+              <rect className="animate-bar-dance" style={{ animationDelay: "0.25s", animationDuration: "1.4s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="143" y="185" width="6" height="55" fill="#2AB0C1" />
+              <rect className="animate-bar-dance" style={{ animationDelay: "0.15s", animationDuration: "1.0s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="153" y="215" width="6" height="25" fill="#FFFFFF" opacity="0.75" />
+              <rect className="animate-bar-dance" style={{ animationDelay: "0.4s", animationDuration: "1.3s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="163" y="195" width="6" height="45" fill="#F8BE1C" />
               <text x="140" y="258" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontSize="6.5" fill="#FFFFFF" opacity="0.55" letterSpacing="1.5">ANALYZING · 1.2M/J</text>
             </g>
           </svg>
         </div>
 
-        {/* Bottom Stats */}
-        <div className="relative z-[2] grid grid-cols-3 gap-4 pt-5 border-t border-white/10">
-          <div>
-            <b className="block text-2xl font-semibold text-white tracking-tight">350+</b>
-            <span className="font-mono text-[10px] text-white/55 tracking-widest uppercase">{t("stat_experts")}</span>
-          </div>
-          <div>
-            <b className="block text-2xl font-semibold text-white tracking-tight">7+</b>
-            <span className="font-mono text-[10px] text-white/55 tracking-widest uppercase">{t("stat_clients")}</span>
-          </div>
-          <div>
-            <b className="block text-2xl font-semibold text-white tracking-tight">4–6</b>
-            <span className="font-mono text-[10px] text-white/55 tracking-widest uppercase">{t("stat_poc")}</span>
-          </div>
-        </div>
       </div>
     </div>
   );

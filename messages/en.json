@@ -35,7 +35,7 @@
   "services_section": {
     "label": "Our services",
     "eyebrow": "Our services",
-    "title": "AI at the service<br>of your <em>growth.</em>",
+    "title": "AI at the service<br></br>of your <em>growth.</em>",
     "learn_more": "Learn more"
   },
   "clients_section": {
@@ -55,7 +55,7 @@
   },
   "proxym_section": {
     "eyebrow": "Strategic Alliance",
-    "title": "An international<br><em>strike force.</em>",
+    "title": "An international<br></br><em>strike force.</em>",
     "lead": "digitowls is the <strong>exclusive representative of Proxym in Canada</strong>. This alliance offers the Canadian market the best of both worlds: <em>local agility</em> from a responsive Montreal team aware of North American challenges, combined with <em>global power</em> from a European leader in digital transformation.",
     "stat_1": "Proxym experts available for your projects",
     "stat_2": "Years of digital transformation experience",
@@ -73,7 +73,7 @@
   },
   "realisations_page": {
     "eyebrow": "Projects",
-    "title": "Concrete results,<br>measurable <em>value.</em>",
+    "title": "Concrete results,<br></br>measurable <em>value.</em>",
     "description": "Our projects",
     "filter_all": "All",
     "case_1": {
@@ -320,7 +320,7 @@
   },
   "approche_doer": {
     "eyebrow": "DOer Approach",
-    "title": "Based on experimentation<br>of <em>(very)</em> concrete cases.",
+    "title": "Based on experimentation<br></br>of <em>(very)</em> concrete cases.",
     "phase_1_title": "<em>Use</em> Case",
     "phase_1_desc": "Identifying high-potential business cases. Precise scoping of objectives, constraints, and success criteria.",
     "phase_2_title": "<em>Proof</em> of Concept",
@@ -412,7 +412,7 @@
   },
   "careers_home": {
     "eyebrow": "Careers · 3 open positions",
-    "title": "Join a team<br>of <em>passionate people.</em>",
+    "title": "Join a team<br></br>of <em>passionate people.</em>",
     "lead": "We're looking for <strong>committed, hands-on profiles who are very good at what they do</strong>. All positions are in Montreal, full-time, with access to Banque Nationale, Desjardins, Intact projects — and the international Proxym network.",
     "apply": "Apply",
     "spontaneous_title": "No position matches your profile?",
@@ -448,13 +448,13 @@
   },
   "team_section": {
     "eyebrow": "Our team",
-    "title": "The experts behind<br>your <em>performance.</em>",
+    "title": "The experts behind<br></br>your <em>performance.</em>",
     "values_eyebrow": "Our values",
-    "values_title": "A culture of<br><em>standard.</em>"
+    "values_title": "A culture of<br></br><em>standard.</em>"
   },
   "cta_section": {
     "label": "Ready to transform your business with AI?",
-    "headline": "Book a free <em>consultation</em><br>with our experts.",
+    "headline": "Book a free <em>consultation</em><br></br>with our experts.",
     "subtitle": "A few lines are enough to get started. We respond within 48 business hours.",
     "cta_primary": "Book now",
     "cta_email": "candidature@digitowls.com"

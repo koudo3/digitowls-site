@@ -19,6 +19,7 @@ export default function ApprocheDOer() {
         <h2 className="section-title reveal">
           {t.rich("title", {
             em: (chunks) => <em>{chunks}</em>,
+            br: () => <br />,
           })}
         </h2>
 

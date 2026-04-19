@@ -16,6 +16,7 @@ export default function CtaSection() {
         <h2 className="reveal text-[clamp(48px,7vw,104px)] font-medium leading-[0.95] tracking-[-0.04em] mb-8">
           {t.rich("headline", {
             em: (chunks) => <em className="font-serif italic font-normal bg-gradient-to-r from-secondary-soft to-accent bg-clip-text text-transparent">{chunks}</em>,
+            br: () => <br />,
           })}
         </h2>
         <p className="text-lg text-white/80 max-w-[54ch] mx-auto mb-12 font-light">{t("subtitle")}</p>

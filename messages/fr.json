@@ -35,7 +35,7 @@
   "services_section": {
     "label": "Nos services",
     "eyebrow": "Nos services",
-    "title": "L'IA au service<br>de votre <em>croissance.</em>",
+    "title": "L'IA au service<br></br>de votre <em>croissance.</em>",
     "learn_more": "En savoir plus"
   },
   "clients_section": {
@@ -55,7 +55,7 @@
   },
   "proxym_section": {
     "eyebrow": "Alliance stratégique",
-    "title": "Une force de frappe<br><em>internationale.</em>",
+    "title": "Une force de frappe<br></br><em>internationale.</em>",
     "lead": "digitowls est le <strong>représentant exclusif de Proxym au Canada</strong>. Cette alliance permet d'offrir au marché canadien le meilleur des deux mondes : <em>l'agilité locale</em> d'une équipe montréalaise réactive et au fait des enjeux nord-américains, combinée à <em>la puissance globale</em> d'un leader européen de la transformation numérique.",
     "stat_1": "Experts Proxym mobilisables sur vos projets",
     "stat_2": "D'expérience en transformation numérique",
@@ -73,7 +73,7 @@
   },
   "realisations_page": {
     "eyebrow": "Réalisations",
-    "title": "Des résultats concrets,<br>une valeur <em>mesurable.</em>",
+    "title": "Des résultats concrets,<br></br>une valeur <em>mesurable.</em>",
     "description": "Nos réalisations",
     "filter_all": "Tous",
     "case_1": {
@@ -320,7 +320,7 @@
   },
   "approche_doer": {
     "eyebrow": "Approche « DOer »",
-    "title": "Basée sur l'expérimentation<br>de cas <em>(très)</em> concrets.",
+    "title": "Basée sur l'expérimentation<br></br>de cas <em>(très)</em> concrets.",
     "phase_1_title": "<em>Use</em> Case",
     "phase_1_desc": "Identification du cas métier à fort potentiel. Cadrage précis des objectifs, contraintes et critères de réussite.",
     "phase_2_title": "<em>Proof</em> of Concept",
@@ -412,7 +412,7 @@
   },
   "careers_home": {
     "eyebrow": "Carrières · 3 postes ouverts",
-    "title": "Rejoignez une équipe<br>de <em>passionnés.</em>",
+    "title": "Rejoignez une équipe<br></br>de <em>passionnés.</em>",
     "lead": "Nous recherchons des profils <strong>engagés, opérationnels et très bons dans ce qu'ils font</strong>. Tous nos postes sont à Montréal, en temps plein, avec accès aux projets de Banque Nationale, Desjardins, Intact — et au réseau Proxym international.",
     "apply": "Postuler",
     "spontaneous_title": "Aucun poste ne correspond à votre profil ?",
@@ -448,13 +448,13 @@
   },
   "team_section": {
     "eyebrow": "Notre équipe",
-    "title": "Les experts derrière<br>votre <em>numérique.</em>",
+    "title": "Les experts derrière<br></br>votre accélération <em>numérique.</em>",
     "values_eyebrow": "Nos valeurs",
-    "values_title": "Une culture<br>d'<em>exigence.</em>"
+    "values_title": "Une culture<br></br>d''<em>exigence.</em>"
   },
   "cta_section": {
     "label": "Prêt à transformer votre entreprise avec l'IA ?",
-    "headline": "Réservez une <em>consultation</em><br>gratuite avec nos experts.",
+    "headline": "Réservez une <em>consultation</em><br></br>gratuite avec nos experts.",
     "subtitle": "Quelques lignes suffisent pour commencer. Nous répondons sous 48 heures ouvrables.",
     "cta_primary": "Réserver maintenant",
     "cta_email": "candidature@digitowls.com"

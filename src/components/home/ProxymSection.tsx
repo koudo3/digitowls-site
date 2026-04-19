@@ -21,6 +21,7 @@ export default function ProxymSection() {
         <h2 className="section-title reveal !text-white">
           {t.rich("title", {
             em: (chunks) => <em className="!text-accent">{chunks}</em>,
+            br: () => <br />,
           })}
         </h2>
 
