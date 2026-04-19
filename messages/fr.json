@@ -13,12 +13,24 @@
     "cta": "Démarrer un projet"
   },
   "hero": {
-    "subtitle": "Firme de consultation IA",
-    "title_1": "Votre vision IA",
-    "title_2": "amplifiée",
-    "description": "Accompagnement stratégique en intelligence artificielle — du conseil au déploiement de solutions sur mesure.",
+    "label": "Firme de consultation IA · Montréal",
+    "title_line1": "Votre vision IA,",
+    "title_line2": "amplifiée.",
+    "title_line3": "Du conseil au",
+    "title_line4": "déploiement.",
+    "subtitle": "Accompagnement stratégique en intelligence artificielle — du <strong>conseil</strong> au <strong>déploiement de solutions sur mesure</strong>. Pour les banques, les assurances et les entreprises qui veulent faire de l'IA un levier de croissance concret.",
     "cta_primary": "Démarrer votre projet IA",
-    "cta_secondary": "Nos services"
+    "cta_secondary": "Découvrir les services",
+    "card_live": "En direct · Montréal",
+    "kpi_clients": "Clients",
+    "kpi_team": "Équipe",
+    "kpi_innovation": "Innovation",
+    "metric_roi": "ROI projet",
+    "metric_precision": "Précision IA",
+    "metric_patterns": "Patterns",
+    "stat_experts": "Experts Proxym",
+    "stat_clients": "Clients majeurs",
+    "stat_poc": "Sem. / POC"
   },
   "services_section": {
     "label": "Nos services",

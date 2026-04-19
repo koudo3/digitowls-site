@@ -13,12 +13,24 @@
     "cta": "Start a project"
   },
   "hero": {
-    "subtitle": "AI Consulting Firm",
-    "title_1": "Your AI vision",
-    "title_2": "amplified",
-    "description": "Strategic AI consulting — from advisory to deployment of tailored solutions.",
+    "label": "AI Consulting Firm · Montreal",
+    "title_line1": "Your AI vision,",
+    "title_line2": "amplified.",
+    "title_line3": "From consulting to",
+    "title_line4": "deployment.",
+    "subtitle": "Strategic AI consulting — from <strong>advisory</strong> to <strong>deployment of tailored solutions</strong>. For banks, insurance companies, and enterprises that want to turn AI into a concrete growth lever.",
     "cta_primary": "Start your AI project",
-    "cta_secondary": "Our services"
+    "cta_secondary": "Discover our services",
+    "card_live": "Live · Montreal",
+    "kpi_clients": "Clients",
+    "kpi_team": "Team",
+    "kpi_innovation": "Innovation",
+    "metric_roi": "Project ROI",
+    "metric_precision": "AI Precision",
+    "metric_patterns": "Patterns",
+    "stat_experts": "Proxym Experts",
+    "stat_clients": "Major Clients",
+    "stat_poc": "Wks / POC"
   },
   "services_section": {
     "label": "Our services",
