@@ -393,5 +393,48 @@
       "results": ["A detailed report with prioritized recommendations.", "A precise mapping of your technical risks.", "A remediation plan to restart on solid foundations."],
       "cta": "Book a consultation session"
     }
+  },
+  "careers_home": {
+    "eyebrow": "Careers · 3 open positions",
+    "title": "Join a team<br>of <em>passionate people.</em>",
+    "lead": "We're looking for <strong>committed, hands-on profiles who are very good at what they do</strong>. All positions are in Montreal, full-time, with access to Banque Nationale, Desjardins, Intact projects — and the international Proxym network.",
+    "apply": "Apply",
+    "spontaneous_title": "No position matches your profile?",
+    "spontaneous_text": "Send us your resume — we might find a path together. Applied AI evolves fast, and great profiles always find their place with us.",
+    "spontaneous_cta": "Spontaneous application",
+    "job_1": {
+      "level": "Senior",
+      "type": "Full-time",
+      "location": "Montreal, QC",
+      "title": "<em>QA</em> Automation Specialist",
+      "desc": "Put automated testing, quality, and reliability at the heart of our products. Selenium, Cypress, Playwright, CI/CD pipelines (Jenkins, GitLab, GitHub Actions), performance testing (JMeter, k6)."
+    },
+    "job_2": {
+      "level": "Senior",
+      "type": "Full-time",
+      "location": "Montreal, QC",
+      "title": "<em>AI</em> & Blockchain Architect",
+      "desc": "Carry a strategic vision, design robust architectures, deliver concrete use cases. AI/ML (Python, TensorFlow, PyTorch, LLM), blockchain (Ethereum, Solidity, Web3), cloud (AWS, Azure, GCP)."
+    },
+    "job_3": {
+      "level": "Senior",
+      "type": "Full-time",
+      "location": "Montreal, QC",
+      "title": "Lead <em>Fullstack</em> Dev",
+      "desc": "Technically lead a team, design performant web & mobile applications. React/Next.js, Node.js, TypeScript, SQL/NoSQL databases, DevOps and CI/CD practices, mentoring."
+    }
+  },
+  "testimonial": {
+    "quote": "digitowls has been an <em>invaluable</em> partner. Their professional approach and innovative solutions have significantly improved our IT security.",
+    "avatar": "JD",
+    "author": "Jeanne Dupont",
+    "role": "VP. Operations · Banque Nationale"
+  },
+  "cta_section": {
+    "label": "Ready to transform your business with AI?",
+    "headline": "Book a free <em>consultation</em><br>with our experts.",
+    "subtitle": "A few lines are enough to get started. We respond within 48 business hours.",
+    "cta_primary": "Book now",
+    "cta_email": "candidature@digitowls.com"
   }
 }

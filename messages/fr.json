@@ -393,5 +393,48 @@
       "results": ["Un rapport détaillé avec des recommandations priorisées.", "Une cartographie précise de vos risques techniques.", "Un plan d'assainissement pour repartir sur des bases saines."],
       "cta": "Réserver une session de consultation"
     }
+  },
+  "careers_home": {
+    "eyebrow": "Carrières · 3 postes ouverts",
+    "title": "Rejoignez une équipe<br>de <em>passionnés.</em>",
+    "lead": "Nous recherchons des profils <strong>engagés, opérationnels et très bons dans ce qu'ils font</strong>. Tous nos postes sont à Montréal, en temps plein, avec accès aux projets de Banque Nationale, Desjardins, Intact — et au réseau Proxym international.",
+    "apply": "Postuler",
+    "spontaneous_title": "Aucun poste ne correspond à votre profil ?",
+    "spontaneous_text": "Envoyez-nous votre CV — on trouvera peut-être une piste ensemble. L'IA appliquée évolue vite, et les bons profils trouvent toujours leur place chez nous.",
+    "spontaneous_cta": "Candidature spontanée",
+    "job_1": {
+      "level": "Senior",
+      "type": "Temps plein",
+      "location": "Montréal, QC",
+      "title": "Spécialiste <em>QA</em> Automation",
+      "desc": "Mettez les tests automatisés, la qualité et la fiabilité au cœur de nos produits. Selenium, Cypress, Playwright, pipelines CI/CD (Jenkins, GitLab, GitHub Actions), tests de performance (JMeter, k6)."
+    },
+    "job_2": {
+      "level": "Senior",
+      "type": "Temps plein",
+      "location": "Montréal, QC",
+      "title": "Architecte <em>IA</em> & Blockchain",
+      "desc": "Portez une vision stratégique, concevez des architectures robustes, livrez des cas d'usage concrets. IA/ML (Python, TensorFlow, PyTorch, LLM), blockchain (Ethereum, Solidity, Web3), cloud (AWS, Azure, GCP)."
+    },
+    "job_3": {
+      "level": "Senior",
+      "type": "Temps plein",
+      "location": "Montréal, QC",
+      "title": "Lead Dev <em>Fullstack</em>",
+      "desc": "Dirigez techniquement une équipe, concevez des applications web & mobiles performantes. React/Next.js, Node.js, TypeScript, bases SQL/NoSQL, pratiques DevOps et CI/CD, mentorat."
+    }
+  },
+  "testimonial": {
+    "quote": "digitowls a été un partenaire <em>précieux</em>. Leur approche professionnelle et leurs solutions innovantes ont considérablement amélioré notre sécurité informatique.",
+    "avatar": "JD",
+    "author": "Jeanne Dupont",
+    "role": "VP. Opérations · Banque Nationale"
+  },
+  "cta_section": {
+    "label": "Prêt à transformer votre entreprise avec l'IA ?",
+    "headline": "Réservez une <em>consultation</em><br>gratuite avec nos experts.",
+    "subtitle": "Quelques lignes suffisent pour commencer. Nous répondons sous 48 heures ouvrables.",
+    "cta_primary": "Réserver maintenant",
+    "cta_email": "candidature@digitowls.com"
   }
 }
