@@ -315,10 +315,10 @@
     "phase_4_desc": "Intégration pleine dans votre SI, gouvernance, monitoring, formation des équipes. L'IA passe en production."
   },
   "values_data": {
-    "innovation": { "title": "Innovation", "description": "Nous repoussons les limites de l'IA pour créer des solutions avant-gardistes." },
-    "collaboration": { "title": "Collaboration", "description": "Nous travaillons main dans la main avec nos clients pour atteindre leurs objectifs." },
-    "excellence": { "title": "Excellence", "description": "Nous visons l'excellence dans chaque projet et chaque interaction." },
-    "integrity": { "title": "Intégrité", "description": "Transparence et éthique guident toutes nos décisions." }
+    "innovation": { "title": "Innovation", "title_rich": "<em>Innovation</em>", "description": "Nous repoussons les limites de l'IA pour créer des solutions avant-gardistes — et utiles." },
+    "collaboration": { "title": "Collaboration", "title_rich": "Collabo<em>ration</em>", "description": "Nous travaillons main dans la main avec nos clients pour atteindre leurs objectifs." },
+    "excellence": { "title": "Excellence", "title_rich": "<em>Excellence</em>", "description": "Nous visons l'excellence dans chaque projet et chaque interaction." },
+    "integrity": { "title": "Intégrité", "title_rich": "Intégrité", "description": "Transparence et éthique guident toutes nos décisions." }
   },
   "services_data": {
     "conseil-strategie": {
