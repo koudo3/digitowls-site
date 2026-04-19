@@ -4,10 +4,57 @@
 
 @layer base {
   body {
-    @apply bg-primary text-white font-body;
+    @apply bg-surface text-ink font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.55;
+    overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .gradient-bar {
+    height: 6px;
+    background: linear-gradient(115deg, #141840 0%, #141840 15%, #2AB0C1 55%, #F8BE1C 100%);
+  }
+
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2.5 font-mono text-xs font-medium uppercase tracking-widest text-secondary;
+    padding: 6px 14px;
+    border: 1px solid #2AB0C1;
+    border-radius: 100px;
+    background: #E0F4F7;
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: clamp(44px, 5.6vw, 96px);
+    font-weight: 500;
+    line-height: 0.96;
+    letter-spacing: -0.035em;
+    color: #141840;
+    max-width: 18ch;
+    margin-bottom: 72px;
+  }
+  .section-title em {
+    font-family: 'Instrument Serif', ui-serif, Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #2AB0C1;
+    letter-spacing: -0.025em;
   }
 }
