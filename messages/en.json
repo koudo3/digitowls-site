@@ -446,6 +446,12 @@
     "author": "Jeanne Dupont",
     "role": "VP. Operations · Banque Nationale"
   },
+  "team_section": {
+    "eyebrow": "Our team",
+    "title": "The experts behind<br>your <em>performance.</em>",
+    "values_eyebrow": "Our values",
+    "values_title": "A culture of<br><em>standard.</em>"
+  },
   "cta_section": {
     "label": "Ready to transform your business with AI?",
     "headline": "Book a free <em>consultation</em><br>with our experts.",
