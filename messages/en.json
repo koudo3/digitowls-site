@@ -315,17 +315,16 @@
     }
   },
   "approche_doer": {
-    "title": "A",
-    "title_highlight": "\"DOer\" approach",
-    "subtitle": "based on experimentation with (very) concrete use cases",
-    "step_1": "Use Case",
-    "step_2": "Proof of Concept / Experimentation",
-    "iterations": "Iterations",
-    "step_3_line1": "Industrialization",
-    "step_3_line2": "Integration",
-    "value_1": "Collaboration",
-    "value_2": "Transparency",
-    "value_3": "Proximity"
+    "eyebrow": "DOer Approach",
+    "title": "Based on experimentation<br>of <em>(very)</em> concrete cases.",
+    "phase_1_title": "<em>Use</em> Case",
+    "phase_1_desc": "Identifying high-potential business cases. Precise scoping of objectives, constraints, and success criteria.",
+    "phase_2_title": "<em>Proof</em> of Concept",
+    "phase_2_desc": "Functional prototype in 4 to 6 weeks. Technical, economic, and user validation in real conditions.",
+    "phase_3_title": "<em>Iterations</em>",
+    "phase_3_desc": "Successive refinements based on field feedback. Model, data, and experience adjustments.",
+    "phase_4_title": "Industriali<em>zation</em>",
+    "phase_4_desc": "Full integration into your IS, governance, monitoring, team training. AI goes to production."
   },
   "values_data": {
     "innovation": { "title": "Innovation", "description": "We push the boundaries of AI to create cutting-edge solutions." },

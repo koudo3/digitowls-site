@@ -315,17 +315,16 @@
     }
   },
   "approche_doer": {
-    "title": "Une approche",
-    "title_highlight": "\"DOer\"",
-    "subtitle": "basée sur l'expérimentation de cas (très) concrets",
-    "step_1": "Use Case",
-    "step_2": "Proof of Concept / Expérimentation",
-    "iterations": "Itérations",
-    "step_3_line1": "Industrialisation",
-    "step_3_line2": "Intégration",
-    "value_1": "Collaboration",
-    "value_2": "Transparence",
-    "value_3": "Proximité"
+    "eyebrow": "Approche « DOer »",
+    "title": "Basée sur l'expérimentation<br>de cas <em>(très)</em> concrets.",
+    "phase_1_title": "<em>Use</em> Case",
+    "phase_1_desc": "Identification du cas métier à fort potentiel. Cadrage précis des objectifs, contraintes et critères de réussite.",
+    "phase_2_title": "<em>Proof</em> of Concept",
+    "phase_2_desc": "Prototype fonctionnel en 4 à 6 semaines. Validation technique, économique et utilisateur en conditions réelles.",
+    "phase_3_title": "<em>Itérations</em>",
+    "phase_3_desc": "Raffinements successifs basés sur les retours terrain. Ajustement du modèle, des données et de l'expérience.",
+    "phase_4_title": "Industriali<em>sation</em>",
+    "phase_4_desc": "Intégration pleine dans votre SI, gouvernance, monitoring, formation des équipes. L'IA passe en production."
   },
   "values_data": {
     "innovation": { "title": "Innovation", "description": "Nous repoussons les limites de l'IA pour créer des solutions avant-gardistes." },
