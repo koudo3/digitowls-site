@@ -53,6 +53,15 @@
       "role": "IT Director"
     }
   },
+  "proxym_section": {
+    "eyebrow": "Strategic Alliance",
+    "title": "An international<br><em>strike force.</em>",
+    "lead": "digitowls is the <strong>exclusive representative of Proxym in Canada</strong>. This alliance offers the Canadian market the best of both worlds: <em>local agility</em> from a responsive Montreal team aware of North American challenges, combined with <em>global power</em> from a European leader in digital transformation.",
+    "stat_1": "Proxym experts available for your projects",
+    "stat_2": "Years of digital transformation experience",
+    "stat_3": "Innovation Lab, Banking & Insurance, Talent",
+    "stat_4": "Montreal-based — close, responsive, bilingual"
+  },
   "cta_banner": {
     "title": "Ready to transform your business with AI?",
     "description": "Book a free consultation with our experts.",
