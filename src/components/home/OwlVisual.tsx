@@ -84,7 +84,7 @@ export default function OwlVisual() {
           </div>
 
           {/* Owl SVG */}
-          <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" className="w-[220px] h-auto">
+          <svg viewBox="0 0 280 295" xmlns="http://www.w3.org/2000/svg" className="w-[220px] h-auto">
             <defs>
               <linearGradient id="owlGrad" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stopColor="#2AB0C1" />
@@ -120,7 +120,7 @@ export default function OwlVisual() {
               <rect className="animate-bar-dance" style={{ animationDelay: "0.25s", animationDuration: "1.4s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="143" y="185" width="6" height="55" fill="#2AB0C1" />
               <rect className="animate-bar-dance" style={{ animationDelay: "0.15s", animationDuration: "1.0s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="153" y="215" width="6" height="25" fill="#FFFFFF" opacity="0.75" />
               <rect className="animate-bar-dance" style={{ animationDelay: "0.4s", animationDuration: "1.3s", transformOrigin: "center bottom", transformBox: "fill-box" as never }} x="163" y="195" width="6" height="45" fill="#F8BE1C" />
-              <text x="140" y="235" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontSize="6.5" fill="#FFFFFF" opacity="0.55" letterSpacing="1.5">ANALYZING · 1.2M/J</text>
+              <text x="140" y="288" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontSize="9" fill="#FFFFFF" opacity="0.55" letterSpacing="1.5">ANALYZING · 1.2M/J</text>
             </g>
           </svg>
         </div>

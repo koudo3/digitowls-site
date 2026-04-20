@@ -27,9 +27,9 @@ export default function ClientLogos() {
                 key={client.name}
                 src={client.logo}
                 alt={client.name}
-                width={150}
-                height={38}
-                className="h-[38px] w-auto max-w-[150px] object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 hover:scale-[1.08] transition-all duration-300 shrink-0"
+                width={200}
+                height={100}
+                className="max-h-[42px] w-auto max-w-[150px] object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 hover:scale-[1.08] transition-all duration-300 shrink-0"
               />
             ))}
             {/* Set 2 (duplicate for seamless loop) */}
@@ -38,9 +38,9 @@ export default function ClientLogos() {
                 key={`dup-${client.name}`}
                 src={client.logo}
                 alt=""
-                width={150}
-                height={38}
-                className="h-[38px] w-auto max-w-[150px] object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 hover:scale-[1.08] transition-all duration-300 shrink-0"
+                width={200}
+                height={100}
+                className="max-h-[42px] w-auto max-w-[150px] object-contain grayscale opacity-55 hover:grayscale-0 hover:opacity-100 hover:scale-[1.08] transition-all duration-300 shrink-0"
                 aria-hidden
               />
             ))}

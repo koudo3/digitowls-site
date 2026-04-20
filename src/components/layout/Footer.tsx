@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="block max-w-[120px] mb-5">
-              <Image src="/images/logo/digitowls-icon.svg" alt="digitowls" width={120} height={40} className="w-full h-auto" />
+              <Image src="/images/logo/digitowls-icon.svg" alt="digitowls" width={120} height={40} className="w-full h-auto mix-blend-multiply" />
             </div>
             <p className="text-white/60 max-w-[40ch] text-sm leading-relaxed font-light mb-6">{t("tagline")}</p>
             <div className="flex gap-2.5">
@@ -60,6 +60,7 @@ export default function Footer() {
               <li><Link href={`/${locale}/produits`} className="text-sm text-white/70 hover:text-accent transition-colors">{t("nav_products")}</Link></li>
               <li><a href="https://brand.digitowls.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-accent transition-colors">{t("nav_brand")}</a></li>
               <li><Link href={`/${locale}/politique-de-confidentialite`} className="text-sm text-white/70 hover:text-accent transition-colors">{t("nav_privacy")}</Link></li>
+              <li><Link href={`/${locale}/conditions-generales`} className="text-sm text-white/70 hover:text-accent transition-colors">{t("nav_terms")}</Link></li>
             </ul>
           </div>
         </div>

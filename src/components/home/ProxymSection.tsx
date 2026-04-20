@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 
 const stats = [
-  { num: "350", unit: "+", key: "stat_1" },
-  { num: "20", unit: "ans", key: "stat_2" },
-  { num: "3", unit: "piliers", key: "stat_3" },
-  { num: "1", unit: "équipe", key: "stat_4" },
+  { num: "350", unitKey: "stat_1_unit", key: "stat_1" },
+  { num: "20", unitKey: "stat_2_unit", key: "stat_2" },
+  { num: "3", unitKey: "stat_3_unit", key: "stat_3" },
+  { num: "1", unitKey: "stat_4_unit", key: "stat_4" },
 ];
 
 export default function ProxymSection() {
@@ -37,7 +37,7 @@ export default function ProxymSection() {
             {stats.map((stat) => (
               <div key={stat.key} className="reveal bg-white/5 border border-white/10 rounded-2xl p-7 transition-all hover:bg-white/[0.08] hover:-translate-y-[3px] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-primary before:via-secondary before:to-accent">
                 <div className="text-[56px] font-semibold leading-none tracking-[-0.04em] mb-2.5 text-white flex items-baseline gap-1">
-                  {stat.num}<span className="text-[22px] text-accent font-medium tracking-tight">{stat.unit}</span>
+                  {stat.num}<span className="text-[22px] text-accent font-medium tracking-tight">{t(stat.unitKey)}</span>
                 </div>
                 <div className="text-[13px] text-white/60 leading-normal">{t(stat.key)}</div>
               </div>

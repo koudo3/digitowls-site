@@ -1,15 +1,17 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 const jobs = [
-  { key: "job_1", email_subject: "Sp%C3%A9cialiste%20QA%20Automation" },
-  { key: "job_2", email_subject: "Architecte%20IA%20%26%20Blockchain" },
-  { key: "job_3", email_subject: "Lead%20D%C3%A9veloppeur%20Fullstack" },
+  { key: "job_1", anchor: "qa-automation" },
+  { key: "job_2", anchor: "ai-blockchain-architect" },
+  { key: "job_3", anchor: "lead-fullstack" },
 ];
 
 export default function CareersSection() {
   const t = useTranslations("careers_home");
+  const locale = useLocale();
 
   return (
     <section className="py-[140px] px-8 max-md:py-20 max-md:px-5 bg-surface-2" id="carrieres">
@@ -44,12 +46,12 @@ export default function CareersSection() {
                 })}
               </h3>
               <p className="text-sm leading-relaxed text-ink-dim mb-6 flex-1">{t(`${job.key}.desc`)}</p>
-              <a
-                href={`mailto:candidature@digitowls.com?subject=${job.email_subject}`}
+              <Link
+                href={`/${locale}/carrieres#${job.anchor}`}
                 className="self-start inline-flex items-center gap-2.5 text-sm font-semibold text-primary px-5 py-3 bg-accent rounded-[10px] transition-all group-hover:bg-primary group-hover:text-accent"
               >
-                {t("apply")} <span className="inline-block transition-transform group-hover:translate-x-[3px]">→</span>
-              </a>
+                {t("view_detail")} <span className="inline-block transition-transform group-hover:translate-x-[3px]">→</span>
+              </Link>
             </div>
           ))}
         </div>
@@ -59,9 +61,9 @@ export default function CareersSection() {
             <strong className="block text-primary text-[17px] font-semibold mb-1 tracking-tight">{t("spontaneous_title")}</strong>
             {t("spontaneous_text")}
           </div>
-          <a href="mailto:candidature@digitowls.com" className="shrink-0 text-sm font-medium px-5 py-3 border border-border rounded-[10px] text-primary hover:border-accent hover:bg-accent/5 transition-all">
+          <Link href={`/${locale}/carrieres`} className="shrink-0 text-sm font-medium px-5 py-3 border border-border rounded-[10px] text-primary hover:border-accent hover:bg-accent/5 transition-all">
             {t("spontaneous_cta")} →
-          </a>
+          </Link>
         </div>
       </div>
     </section>
