@@ -74,6 +74,7 @@
   "realisations_page": {
     "eyebrow": "Projects",
     "title": "Concrete results,<br></br>measurable <em>value.</em>",
+    "lead": "Discover how we supported our clients through their digital transformation.",
     "description": "Our projects",
     "filter_all": "All",
     "case_1": {
@@ -112,9 +113,9 @@
     "title": "About Us",
     "tagline": "The architect of your digital performance.",
     "mission_title": "Our Mission",
-    "mission_text": "DigitOwls was born from a simple conviction: technological innovation only matters when it serves operational reality. We support banks, insurance companies and innovative businesses in transforming their technological challenges into growth drivers. More than a consulting firm, we are your accelerator. We combine deep knowledge of financial industries, mastery of AI technologies and rapid deployment capabilities to create concrete, secure and profitable solutions.",
+    "mission_text": "digitowls was born from a simple conviction: technological innovation only matters when it serves operational reality. We support banks, insurance companies and innovative businesses in transforming their technological challenges into growth drivers. More than a consulting firm, we are your accelerator. We combine deep knowledge of financial industries, mastery of AI technologies and rapid deployment capabilities to create concrete, secure and profitable solutions.",
     "partnership_title": "International Reach",
-    "partnership_text": "DigitOwls is the exclusive representative of Proxym in Canada. This strategic alliance allows us to offer the Canadian market the best of both worlds:",
+    "partnership_text": "digitowls is the exclusive representative of Proxym in Canada. This strategic alliance allows us to offer the Canadian market the best of both worlds:",
     "partnership_local": "Local agility — A Montreal-based team close to you, responsive and aware of North American challenges.",
     "partnership_global": "Global power — Immediate access to the resources of a European digital transformation leader (350+ experts, 20 years of experience).",
     "pillars_title": "Our 3 Pillars of Excellence",
@@ -275,7 +276,7 @@
     "octave-koudoyor": {
       "name": "Octave Koudoyor",
       "role": "President",
-      "bio": "Founder and president of DigitOwls, Octave drives the firm's strategic vision and supports businesses in their digital transformation through artificial intelligence."
+      "bio": "Founder and president of digitowls, Octave drives the firm's strategic vision and supports businesses in their digital transformation through artificial intelligence."
     },
     "xavier-bouclet": {
       "name": "Xavier Bouclet",
@@ -285,7 +286,7 @@
     "alban-pellegrini": {
       "name": "Alban Pellegrini",
       "role": "Vice-President",
-      "bio": "Alban Pellegrini is co-founder and Lead Mobile Developer at DigitOwls, bringing deep expertise in developing innovative, user-oriented mobile applications. He combines startup thinking, agility and technical excellence to turn ambitious ideas into reliable, scalable mobile products."
+      "bio": "Alban Pellegrini is co-founder and Lead Mobile Developer at digitowls, bringing deep expertise in developing innovative, user-oriented mobile applications. He combines startup thinking, agility and technical excellence to turn ambitious ideas into reliable, scalable mobile products."
     },
     "gregoire-guenot": {
       "name": "Grégoire Guenot",
@@ -305,17 +306,17 @@
     "herlin-tang": {
       "name": "Herlin Tang",
       "role": "Expert",
-      "bio": "Digital technology expert at DigitOwls, Herlin contributes to designing and deploying innovative solutions for our clients."
+      "bio": "Digital technology expert at digitowls, Herlin contributes to designing and deploying innovative solutions for our clients."
     },
     "luigi-tomegah": {
       "name": "Luigi Tomegah",
       "role": "Expert",
-      "bio": "Digital technology expert at DigitOwls, Luigi brings his technical expertise to accelerate our clients' transformation projects."
+      "bio": "Digital technology expert at digitowls, Luigi brings his technical expertise to accelerate our clients' transformation projects."
     },
     "olivier-trudeau": {
       "name": "Olivier Trudeau",
       "role": "AI Expert",
-      "bio": "Artificial intelligence expert at DigitOwls, Olivier contributes to the research and development of advanced AI solutions."
+      "bio": "Artificial intelligence expert at digitowls, Olivier contributes to the research and development of advanced AI solutions."
     }
   },
   "approche_doer": {
@@ -352,7 +353,7 @@
     "fintech-assurances": {
       "title": "Fintech & Insurance Solutions",
       "short": "Banking digital excellence with Proxym.",
-      "tagline": "Digitowls is the exclusive reseller in Canada. Deploy seamless, secure and 100% digital customer experiences.",
+      "tagline": "digitowls is the exclusive reseller in Canada. Deploy seamless, secure and 100% digital customer experiences.",
       "description": "Banking digital excellence with Proxym. Core banking, regulatory compliance, fraud detection, augmented underwriting.",
       "approach_title": "The Proxym Solution",
       "approach_text": "As an exclusive partner, we give you access to a suite of globally proven platforms:",

@@ -28,7 +28,7 @@ export default function CtaSection() {
             {t("cta_primary")} →
           </a>
           <a
-            href="mailto:candidature@digitowls.com"
+            href="mailto:info@digitowls.com"
             className="text-[15px] font-medium px-7 py-4 rounded-[10px] border border-white/25 text-white inline-flex items-center gap-2.5 transition-all hover:bg-white/[0.08] hover:border-white/50"
           >
             {t("cta_email")}

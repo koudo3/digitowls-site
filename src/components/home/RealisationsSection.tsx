@@ -86,6 +86,9 @@ export default function RealisationsSection() {
             br: () => <br />,
           })}
         </h2>
+        <p className="reveal text-lg leading-relaxed text-ink-dim max-w-[62ch] -mt-10 mb-14 font-light">
+          {t("lead")}
+        </p>
 
         <div className="grid grid-cols-6 gap-5">
           {cases.map((c, i) => (

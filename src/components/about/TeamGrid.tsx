@@ -27,7 +27,7 @@ export default function TeamGrid() {
                 className="absolute top-3.5 right-3.5 text-white/90 z-[3] transition-all w-8 h-8 flex items-center justify-center rounded-lg bg-primary/40 backdrop-blur-[8px] group-hover:text-accent group-hover:bg-primary/75"
                 aria-label={`LinkedIn ${tTeam(`${member.id}.name`)}`}
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8 17v-7H5v7h3zM6.5 8.5A1.5 1.5 0 108.5 7 1.5 1.5 0 006.5 8.5zM19 17v-4c0-2-1-3-3-3a2.7 2.7 0 00-2.5 1.3V10H11v7h3v-3.5c0-1 .5-1.5 1.5-1.5s1.5.5 1.5 1.5V17h2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="aspect-square"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8 17v-7H5v7h3zM6.5 8.5A1.5 1.5 0 108.5 7 1.5 1.5 0 006.5 8.5zM19 17v-4c0-2-1-3-3-3a2.7 2.7 0 00-2.5 1.3V10H11v7h3v-3.5c0-1 .5-1.5 1.5-1.5s1.5.5 1.5 1.5V17h2z"/></svg>
               </a>
             )}
           </div>

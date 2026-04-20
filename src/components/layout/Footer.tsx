@@ -15,11 +15,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="block max-w-[120px] mb-5">
-              <Image src="/images/logo/owl-4.svg" alt="digitowls" width={120} height={40} className="w-full h-auto" />
+              <Image src="/images/logo/digitowls-icon.svg" alt="digitowls" width={120} height={40} className="w-full h-auto" />
             </div>
             <p className="text-white/60 max-w-[40ch] text-sm leading-relaxed font-light mb-6">{t("tagline")}</p>
             <div className="flex gap-2.5">
-              <SocialIcon href="https://www.linkedin.com/company/lafabriquedigitowl" label="LinkedIn">
+              <SocialIcon href="https://www.linkedin.com/company/digitowls" label="LinkedIn">
                 <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8 17v-7H5v7h3zM6.5 8.5A1.5 1.5 0 108.5 7 1.5 1.5 0 006.5 8.5zM19 17v-4c0-2-1-3-3-3a2.7 2.7 0 00-2.5 1.3V10H11v7h3v-3.5c0-1 .5-1.5 1.5-1.5s1.5.5 1.5 1.5V17h2z"/>
               </SocialIcon>
               <SocialIcon href="https://x.com/anat0wl" label="Twitter">
@@ -46,7 +46,7 @@ export default function Footer() {
             <h4 className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent mb-5 font-medium">{t("col_contact")}</h4>
             <ul className="space-y-3 list-none">
               <li><a href="tel:+14384927832" className="text-sm text-white/70 hover:text-accent transition-colors">438-492-7832</a></li>
-              <li><a href="mailto:candidature@digitowls.com" className="text-sm text-white/70 hover:text-accent transition-colors">candidature@digitowls.com</a></li>
+              <li><a href="mailto:info@digitowls.com" className="text-sm text-white/70 hover:text-accent transition-colors">info@digitowls.com</a></li>
             </ul>
             <p className="text-[13px] text-white/60 leading-normal mt-4">WeWork, Suite 400<br />3 Place Ville Marie<br />Montréal, H3B 2E3, QC</p>
           </div>

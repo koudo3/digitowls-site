@@ -74,6 +74,7 @@
   "realisations_page": {
     "eyebrow": "Réalisations",
     "title": "Des résultats concrets,<br></br>une valeur <em>mesurable.</em>",
+    "lead": "Découvrez comment nous avons accompagné nos clients dans leur transformation numérique.",
     "description": "Nos réalisations",
     "filter_all": "Tous",
     "case_1": {
@@ -112,9 +113,9 @@
     "title": "Qui sommes-nous",
     "tagline": "L'architecte de votre performance numérique.",
     "mission_title": "Notre mission",
-    "mission_text": "DigitOwls est né d'une conviction simple : l'innovation technologique ne vaut que si elle sert une réalité opérationnelle. Nous accompagnons les banques, les assurances et les entreprises innovantes pour transformer leurs défis technologiques en leviers de croissance. Plus qu'un cabinet de conseil, nous sommes votre accélérateur. Nous combinons une connaissance pointue des métiers financiers, une maîtrise des technologies d'IA et une capacité de déploiement rapide pour créer des solutions concrètes, sécurisées et rentables.",
+    "mission_text": "digitowls est né d'une conviction simple : l'innovation technologique ne vaut que si elle sert une réalité opérationnelle. Nous accompagnons les banques, les assurances et les entreprises innovantes pour transformer leurs défis technologiques en leviers de croissance. Plus qu'un cabinet de conseil, nous sommes votre accélérateur. Nous combinons une connaissance pointue des métiers financiers, une maîtrise des technologies d'IA et une capacité de déploiement rapide pour créer des solutions concrètes, sécurisées et rentables.",
     "partnership_title": "Une force de frappe internationale",
-    "partnership_text": "DigitOwls est le représentant exclusif de Proxym au Canada. Cette alliance stratégique nous permet d'offrir au marché canadien le meilleur des deux mondes :",
+    "partnership_text": "digitowls est le représentant exclusif de Proxym au Canada. Cette alliance stratégique nous permet d'offrir au marché canadien le meilleur des deux mondes :",
     "partnership_local": "L'agilité locale — Une équipe montréalaise proche de vous, réactive et au fait des enjeux nord-américains.",
     "partnership_global": "La puissance globale — L'accès immédiat aux ressources d'un leader européen de la transformation numérique (350+ experts, 20 ans d'expérience).",
     "pillars_title": "Nos 3 Piliers d'Excellence",
@@ -275,7 +276,7 @@
     "octave-koudoyor": {
       "name": "Octave Koudoyor",
       "role": "Président",
-      "bio": "Fondateur et président de DigitOwls, Octave pilote la vision stratégique de la firme et accompagne les entreprises dans leur transformation numérique par l'intelligence artificielle."
+      "bio": "Fondateur et président de digitowls, Octave pilote la vision stratégique de la firme et accompagne les entreprises dans leur transformation numérique par l'intelligence artificielle."
     },
     "xavier-bouclet": {
       "name": "Xavier Bouclet",
@@ -285,7 +286,7 @@
     "alban-pellegrini": {
       "name": "Alban Pellegrini",
       "role": "Vice-Président",
-      "bio": "Alban Pellegrini est co-fondateur et Lead Mobile Developer chez DigitOwls, apportant une expertise profonde dans le développement d'applications mobiles innovantes et orientées utilisateur. Il combine pensée startup, agilité et excellence technique pour transformer des idées ambitieuses en produits mobiles fiables et scalables."
+      "bio": "Alban Pellegrini est co-fondateur et Lead Mobile Developer chez digitowls, apportant une expertise profonde dans le développement d'applications mobiles innovantes et orientées utilisateur. Il combine pensée startup, agilité et excellence technique pour transformer des idées ambitieuses en produits mobiles fiables et scalables."
     },
     "gregoire-guenot": {
       "name": "Grégoire Guenot",
@@ -305,17 +306,17 @@
     "herlin-tang": {
       "name": "Herlin Tang",
       "role": "Expert",
-      "bio": "Expert en technologies numériques chez DigitOwls, Herlin contribue à la conception et au déploiement de solutions innovantes pour nos clients."
+      "bio": "Expert en technologies numériques chez digitowls, Herlin contribue à la conception et au déploiement de solutions innovantes pour nos clients."
     },
     "luigi-tomegah": {
       "name": "Luigi Tomegah",
       "role": "Expert",
-      "bio": "Expert en technologies numériques chez DigitOwls, Luigi apporte son savoir-faire technique pour accélérer les projets de transformation de nos clients."
+      "bio": "Expert en technologies numériques chez digitowls, Luigi apporte son savoir-faire technique pour accélérer les projets de transformation de nos clients."
     },
     "olivier-trudeau": {
       "name": "Olivier Trudeau",
       "role": "Expert IA",
-      "bio": "Expert en intelligence artificielle chez DigitOwls, Olivier contribue à la recherche et au développement de solutions IA avancées."
+      "bio": "Expert en intelligence artificielle chez digitowls, Olivier contribue à la recherche et au développement de solutions IA avancées."
     }
   },
   "approche_doer": {
@@ -352,7 +353,7 @@
     "fintech-assurances": {
       "title": "Solutions Fintech & Assurances",
       "short": "L'excellence digitale bancaire avec Proxym.",
-      "tagline": "Digitowls est le revendeur exclusif au Canada. Déployez des expériences clients fluides, sécurisées et 100% digitales.",
+      "tagline": "digitowls est le revendeur exclusif au Canada. Déployez des expériences clients fluides, sécurisées et 100% digitales.",
       "description": "L'excellence digitale bancaire avec Proxym. Core banking, conformité réglementaire, détection de fraude, souscription augmentée.",
       "approach_title": "La Solution Proxym",
       "approach_text": "En tant que partenaire exclusif, nous vous donnons accès à une suite de plateformes éprouvées mondialement :",
