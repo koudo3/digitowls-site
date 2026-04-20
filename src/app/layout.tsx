@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Nunito } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -37,6 +38,7 @@ export default function RootLayout({
       </head>
       <body className={`${archivo.variable} ${nunito.variable}`}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
