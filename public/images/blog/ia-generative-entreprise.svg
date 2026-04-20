@@ -1,0 +1,127 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IA générative en entreprise">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1235"/>
+      <stop offset="100%" stop-color="#141840"/>
+    </linearGradient>
+    <linearGradient id="waveA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2AB0C1" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#2AB0C1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2AB0C1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8BE1C" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F8BE1C" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#F8BE1C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="waveC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="emitter4" cx="0.2" cy="0.5" r="0.3">
+      <stop offset="0%" stop-color="#F8BE1C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#F8BE1C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+  <rect width="1200" height="630" fill="url(#emitter4)"/>
+
+  <!-- Grid subtle -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" fill="none">
+    <line x1="0" y1="158" x2="1200" y2="158"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+  </g>
+
+  <!-- Generative emitter point -->
+  <g transform="translate(230 315)">
+    <circle r="60" fill="none" stroke="#F8BE1C" stroke-opacity="0.08" stroke-width="1"/>
+    <circle r="40" fill="none" stroke="#F8BE1C" stroke-opacity="0.15" stroke-width="1"/>
+    <circle r="22" fill="#F8BE1C" fill-opacity="0.25"/>
+    <circle r="10" fill="#F8BE1C"/>
+    <circle r="16" fill="none" stroke="#141840" stroke-width="2"/>
+    <circle r="4" fill="#141840"/>
+  </g>
+
+  <!-- 3 waves emerging to the right -->
+  <g>
+    <!-- Wave A (teal, amplitude small, high freq) -->
+    <path d="M 252 315
+             Q 320 260, 400 315
+             T 560 315
+             T 720 315
+             T 880 315
+             T 1040 315
+             T 1200 315"
+          fill="none" stroke="url(#waveA)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Wave B (yellow, amplitude medium) -->
+    <path d="M 252 315
+             Q 360 200, 480 315
+             T 720 315
+             T 960 315
+             T 1200 315"
+          fill="none" stroke="url(#waveB)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- Wave C (white, amplitude large) -->
+    <path d="M 252 315
+             Q 400 120, 600 315
+             T 1000 315
+             T 1200 315"
+          fill="none" stroke="url(#waveC)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Mirror waves below axis -->
+    <path d="M 252 315
+             Q 320 370, 400 315
+             T 560 315
+             T 720 315
+             T 880 315
+             T 1040 315
+             T 1200 315"
+          fill="none" stroke="url(#waveA)" stroke-width="2" stroke-linecap="round" stroke-opacity="0.5"/>
+    <path d="M 252 315
+             Q 360 430, 480 315
+             T 720 315
+             T 960 315
+             T 1200 315"
+          fill="none" stroke="url(#waveB)" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Output tokens on the right — small typographic cells -->
+  <g transform="translate(870 100)" font-family="'JetBrains Mono', monospace" font-size="11">
+    <g>
+      <rect x="0" y="0" width="92" height="30" rx="6" fill="#ffffff" fill-opacity="0.06" stroke="#2AB0C1" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="46" y="20" text-anchor="middle" fill="#2AB0C1" letter-spacing="1">RÉSUMÉ</text>
+    </g>
+    <g transform="translate(110 25)">
+      <rect x="0" y="0" width="100" height="30" rx="6" fill="#ffffff" fill-opacity="0.06" stroke="#F8BE1C" stroke-opacity="0.45" stroke-width="1"/>
+      <text x="50" y="20" text-anchor="middle" fill="#F8BE1C" letter-spacing="1">SUPPORT</text>
+    </g>
+    <g transform="translate(20 60)">
+      <rect x="0" y="0" width="108" height="30" rx="6" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+      <text x="54" y="20" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" letter-spacing="1">ANALYSE</text>
+    </g>
+    <g transform="translate(140 85)">
+      <rect x="0" y="0" width="92" height="30" rx="6" fill="#ffffff" fill-opacity="0.06" stroke="#2AB0C1" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="46" y="20" text-anchor="middle" fill="#2AB0C1" letter-spacing="1">CODE</text>
+    </g>
+    <g transform="translate(50 120)">
+      <rect x="0" y="0" width="100" height="30" rx="6" fill="#ffffff" fill-opacity="0.06" stroke="#F8BE1C" stroke-opacity="0.45" stroke-width="1"/>
+      <text x="50" y="20" text-anchor="middle" fill="#F8BE1C" letter-spacing="1">RAPPORT</text>
+    </g>
+  </g>
+
+  <!-- Eyebrow -->
+  <g transform="translate(80 80)">
+    <rect width="8" height="8" fill="#F8BE1C"/>
+    <text x="22" y="8" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F8BE1C" letter-spacing="3">IA GÉNÉRATIVE · CAS CONCRETS</text>
+  </g>
+
+  <!-- Title positioned at bottom -->
+  <text x="80" y="500" font-family="'Archivo', sans-serif" font-size="36" font-weight="700" fill="#ffffff" letter-spacing="-1">Au-delà du buzz,</text>
+  <text x="80" y="545" font-family="'Instrument Serif', serif" font-style="italic" font-size="36" font-weight="400" fill="#F8BE1C" letter-spacing="-1">les résultats qui comptent.</text>
+
+  <text x="1120" y="590" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" fill-opacity="0.35" letter-spacing="2">digitowls · genai enterprise</text>
+</svg>
