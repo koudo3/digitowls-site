@@ -22,7 +22,7 @@ export default function CtaSection() {
         <p className="text-lg text-white/80 max-w-[54ch] mx-auto mb-12 font-light">{t("subtitle")}</p>
         <div className="inline-flex gap-3.5 flex-wrap justify-center">
           <a
-            href="https://outlook.office.com/bookwithme/user/956fba07c5854cf89edfd8c0e7fc6476@digitowls.com?anonymous&ismsaljsauthenabled&ep=plink"
+            href="https://outlook.office.com/book/AITeam@digitowls.com/"
             className="text-[15px] font-medium px-7 py-4 rounded-[10px] bg-accent text-primary inline-flex items-center gap-2.5 transition-all hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(248,190,28,0.3)]"
           >
             {t("cta_primary")} →
