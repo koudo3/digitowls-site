@@ -145,6 +145,7 @@
     "phone": "Phone",
     "company": "Company",
     "country": "Country",
+    "industry": "Industry",
     "subject": "Subject",
     "message": "Message",
     "submit": "Send",
