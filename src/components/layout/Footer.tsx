@@ -45,7 +45,6 @@ export default function Footer() {
           <div>
             <h4 className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent mb-5 font-medium">{t("col_contact")}</h4>
             <ul className="space-y-3 list-none">
-              <li><a href="tel:+14384927832" className="text-sm text-white/70 hover:text-accent transition-colors">438-492-7832</a></li>
               <li><a href="mailto:info@digitowls.com" className="text-sm text-white/70 hover:text-accent transition-colors">info@digitowls.com</a></li>
             </ul>
             <p className="text-[13px] text-white/60 leading-normal mt-4">WeWork, Suite 400<br />3 Place Ville Marie<br />Montréal, H3B 2E3, QC</p>
