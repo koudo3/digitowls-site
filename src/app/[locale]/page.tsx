@@ -7,7 +7,6 @@ import ApprocheDOer from "@/components/about/ApprocheDOer";
 import RealisationsSection from "@/components/home/RealisationsSection";
 import TeamSection from "@/components/home/TeamSection";
 import CareersSection from "@/components/home/CareersSection";
-import TestimonialSection from "@/components/home/TestimonialSection";
 import CtaSection from "@/components/home/CtaSection";
 
 export default function HomePage() {
@@ -22,7 +21,6 @@ export default function HomePage() {
       <RealisationsSection />
       <TeamSection />
       <CareersSection />
-      <TestimonialSection />
       <CtaSection />
     </>
   );
